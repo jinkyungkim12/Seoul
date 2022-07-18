@@ -10,37 +10,74 @@
 
 <!-- start -->
 
+	<nav class="navbar bg-success text-white fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Class101</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	      <div class="offcanvas-header">
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      </div>
+	      <div class="offcanvas-body">
+	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+	          <li class="nav-item">
+	            <a class="nav-link active" aria-current="page" href="#">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">로그인</a>
+	          </li>
+	          </li>
+	        </ul>
+	        <form class="d-flex" role="search">
+	          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	          <button class="btn btn-outline-success" type="submit">Search</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
 	<div class="container-fluid">
-    <img src="../image/back.jpg">
-<!-- 	 <p class="fs-1 fw-bold text-white">입사지원자 목록</p> -->
+    	<img src="../image/back.jpg">
 	</div>
-	
+	<div class="container p-4">
+		<ul class="nav nav-tabs">
+		  <li class="nav-item">
+		    <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">코드관리</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">코드그룹 관리</a>
+		  </li>
+		</ul>
+	</div>
 	<div class="container p-4">
 		<div class="row justify-content-end">
 			<div class="col-2">
 				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>N</option>
-				  <option value="1">N</option>
-				  <option value="2">Y</option>
+				  <option selected>지원분야</option>
+				  <option value="1">디자인</option>
+				  <option value="2">프로그래밍</option>
+				  <option value="3">기계</option>
+				  <option value="4">반도체</option>
 				</select>
 			</div>
 				<div class="col-2">
 				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>등록일</option>
-				  <option value="1">등록일</option>
+				  <option selected>경력</option>
+				  <option value="1">신입</option>
+				  <option value="1">경력</option>
 				</select>
 			</div>
-				<div class="col-2">
-				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>시작일</option>
-				  <option value="1">시작일</option>
-				</select>
+			<div class="col-2">
+				<input type="text" class="form-control" placeholder="메일주소" aria-label="Recipient's username with two button addons">
 			</div>
-				<div class="col-2">
-				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>종료일</option>
-				  <option value="1">종료일</option>
-				</select>
+			<div class="col-2">
+				<input type="text" class="form-control" placeholder="접속날짜" aria-label="Recipient's username with two button addons">
 			</div>
 		</div>
 	</div>
@@ -49,10 +86,10 @@
 			<div class="col-2">
 				<select class="form-select col-2" aria-label="Default select example">
 				  <option selected>검색구분</option>
-				  <option value="1">N</option>
-				  <option value="2">등록일</option>
-				  <option value="3">시작일</option>
-				  <option value="4">종료일</option>
+				  <option value="1">지원분야</option>
+				  <option value="2">경력</option>
+				  <option value="3">메일주소</option>
+				  <option value="4">접속날짜</option>
 				</select>
 			</div>
 			<div class="col-6">
@@ -227,7 +264,7 @@
 		  </ul>
 		</nav>
 	</div>
-	dfdf
+
 	
 		
 	
