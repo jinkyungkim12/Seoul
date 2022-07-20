@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memberRegForm</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- start -->
+	<nav class="navbar bg-dark fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand text-white" href="#">Class101</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	      <div class="offcanvas-header">
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Class101</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      </div>
+	      <div class="offcanvas-body">
+	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+	          <li class="nav-item">
+	            <a class="nav-link active" aria-current="page" href="#">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">로그인</a>
+	          </li>
+	        </ul>
+	        <form class="d-flex" role="search">
+	          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	          <button class="btn btn-outline-dark" type="submit">Search</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<br>
+	<br>
+	<div class="container p-4">
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <a class="nav-link active text-white" style="background-color: #F87320" aria-current="page" href="#">회원관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-dark" href="#">코드그룹 관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-dark" href="#">코드관리</a>
+	  </li>
+	</ul>
+	</div>
+	<br>
+	<h1 class="fw-bold text-center" style="margin-top: 3rem">입사지원서</h1>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">지원분야</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">경력</span>
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>선택</option>
+					  <option value="1">신입</option>
+					  <option value="2">경력</option>
+				</select>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">희망연봉</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>기본정보</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">성명</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">한문</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">영문</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>   
+			</div>
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">생년월일</span>
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">전화번호</span>
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>010</option>
+					  <option value="1">010</option>
+					  <option value="2">011</option>
+				  </select>
+				  <span class="input-group-text">-</span>
+				  <input type="mobile" class="form-control">
+				  <span class="input-group-text">-</span>
+				  <input type="mobile" class="form-control">
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">비상연락망</span>
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>010</option>
+					  <option value="1">010</option>
+					  <option value="2">011</option>
+				  </select>
+				  <span class="input-group-text">-</span>
+				  <input type="mobile" class="form-control">
+				  <span class="input-group-text">-</span>
+				  <input type="mobile" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">전자우편</span>
+				  <input type="text" class="form-control" aria-label="Username">
+				  <span class="input-group-text">@</span>
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>naver.com</option>
+					  <option value="1">naver.com</option>
+					  <option value="2">gmail.com</option>
+					  <option value="3">daum.net</option>
+				  </select>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">나이</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">주소</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 7rem;">취미생활</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="input-group mb-3">
+			  <input type="file" class="form-control" id="inputGroupFile01">
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>학력사항(최신이력이 가장 위로)</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 19.5rem;">기간</span>
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 19.5rem;">출신학교</span>
+				</div>
+			</div> 
+			<div class="col-2">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 15rem;">구분</span>
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 19.5rem;">학과</span>
+				</div>
+			</div> 
+			<div class="col-1">
+				<div class="input-group">
+				  <span class="input-group-text" style="width: 10rem;">소재지</span>
+				</div>
+			</div> 
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-2">
+				<div class="input-group">
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>선택</option>
+					  <option value="1">졸업</option>
+					  <option value="2">졸업유예</option>
+					  <option value="3">재학</option>
+					  <option value="4">휴학</option>
+					  <option value="5">중퇴</option>
+				</select>
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-1">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-2">
+				<div class="input-group">
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>선택</option>
+					  <option value="1">졸업</option>
+					  <option value="2">졸업유예</option>
+					  <option value="3">재학</option>
+					  <option value="4">휴학</option>
+					  <option value="5">중퇴</option>
+				</select>
+				</div>
+			</div> 
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+			<div class="col-1">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div> 
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>교육연수</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<span class="input-group-text">연수기간</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">연수기관</span>
+			</div>
+			<div class="col-5">
+				<span class="input-group-text">연수과정 및 내용</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group" style="height: 70px">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="form-floating">
+				  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 70px"></textarea>
+				  <label for="floatingTextarea2">내용을 입력하세요.</label>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="form-floating">
+				  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 70px"></textarea>
+				  <label for="floatingTextarea2">내용을 입력하세요.</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>자격사항</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<span class="input-group-text">취득일</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">종류 및 등급</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">발행처</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">보유기술 및 수준</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>경력사항(4대 보험 가입 경력)</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<span class="input-group-text">활동기간</span>
+			</div>
+			<div class="col-2">
+				<span class="input-group-text">기관</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">담당업무</span>
+			</div>
+			<div class="col-3">
+				<span class="input-group-text">경험 및 습득역량</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group">
+				  <input type="date" aria-label="First name" class="form-control"> ~
+				  <input type="date" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="input-group">
+				  <input type="text" aria-label="First name" class="form-control">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>자기소개서</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<span class="input-group-text">자기소개서(자유형식)</span>
+			</div>
+			<div class="form-floating">
+				  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 25rem;"></textarea>
+				  <label for="floatingTextarea2">내용을 입력하세요.</label>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row justify-content-between">	
+	   		<div class="col-10">
+	     		<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-minus"></i></button>
+	     		<button type="button" class="btn btn-dark">취소하기<i class="fa-solid fa-trash-can"></i></button>
+	    	</div>
+	    	<div class="col-2">
+	     		<a type="button" class="btn btn-dark" href="memberView.html">저장하기<i class="fa-solid fa-file-arrow-up"></i></a>
+				<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
+	    	</div>
+	    </div>	
+   </div>
+   <br>
+   <br>
+	
+<!-- end	 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+</body>
+</html>
