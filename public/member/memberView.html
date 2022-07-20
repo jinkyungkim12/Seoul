@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>memberRegForm</title>
+	<title>memberView</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -56,29 +57,24 @@
 	<h1 class="fw-bold text-center" style="margin-top: 3rem">입사지원서</h1>
 	<br>
 	<br>
-	<br>
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">지원분야</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-3 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">지원분야</div>
+					<div class="col-9 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">디자인</div>
 				</div>
 			</div>
 			<div class="col-4">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">경력</span>
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>선택</option>
-					  <option value="1">신입</option>
-					  <option value="2">경력</option>
-				</select>
+				<div class="row gx-2">
+					<div class="col-3 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">경력</div>
+					<div class="col-9 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">신입</div>
 				</div>
 			</div>
 			<div class="col-4">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">희망연봉</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-3 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">희망연봉</div>
+					<div class="col-9 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">회사내규에 따름</div>
 				</div>
 			</div>
 		</div>
@@ -88,105 +84,86 @@
 	<div class="container">
 		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>기본정보</p>
 	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">성명</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">성명</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">차은우</div>
 				</div>
 			</div>
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">한문</span>
-				  <input type="text" aria-label="First name" class="form-control">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">영문</span>
-				  <input type="text" aria-label="First name" class="form-control">
-				</div>   
-			</div>
-			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">생년월일</span>
-				  <input type="date" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">한문</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">車恩禑</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">전화번호</span>
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>010</option>
-					  <option value="1">010</option>
-					  <option value="2">011</option>
-				  </select>
-				  <span class="input-group-text">-</span>
-				  <input type="mobile" class="form-control">
-				  <span class="input-group-text">-</span>
-				  <input type="mobile" class="form-control">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">영문</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">Cha Eunwoo</div>
 				</div>
 			</div>
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">비상연락망</span>
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>010</option>
-					  <option value="1">010</option>
-					  <option value="2">011</option>
-				  </select>
-				  <span class="input-group-text">-</span>
-				  <input type="mobile" class="form-control">
-				  <span class="input-group-text">-</span>
-				  <input type="mobile" class="form-control">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">생년월일</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">1997년 3월 30일</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">전자우편</span>
-				  <input type="text" class="form-control" aria-label="Username">
-				  <span class="input-group-text">@</span>
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>naver.com</option>
-					  <option value="1">naver.com</option>
-					  <option value="2">gmail.com</option>
-					  <option value="3">daum.net</option>
-				  </select>
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">전화번호</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">010-1234-1234</div>
 				</div>
 			</div>
 			<div class="col-6">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">나이</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">비상연락망</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">010-1234-1234</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">전자우편</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">chacha@naver.com</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="row gx-2">
+					<div class="col-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">나이</div>
+					<div class="col-10 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">26세</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">주소</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-1 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">주소</div>
+					<div class="col-11 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">서울시 강남구 oo동 oo아파트</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 7rem;">취미생활</span>
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col-1 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">취미</div>
+					<div class="col-11 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">그림 그리기, 주짓수</div>
 				</div>
 			</div>
 		</div>
-		<div class="col">
-			<div class="input-group mb-3">
-			  <input type="file" class="form-control" id="inputGroupFile01">
+		<div class="row">
+			<div class="col-12">
+				<div class="row gx-2">
+					<div class="col-1 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 border-end-0 rounded-start">파일선택</div>
+					<div class="col-11 p-1 bg-white border border-secondary border-opacity-25 border-start-0 rounded-end">차은우.jpg</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -198,104 +175,96 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-3">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 19.5rem;">기간</span>
+				<div class="row gx-2">
+					<div class="col p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">기간</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 19.5rem;">출신학교</span>
+				<div class="row gx-2">
+					<div class="col p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">출신학교</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-2">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 15rem;">구분</span>
+				<div class="row gx-2">
+					<div class="col p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">구분</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 19.5rem;">학과</span>
+				<div class="row gx-2">
+					<div class="col p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">학교</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-1">
-				<div class="input-group">
-				  <span class="input-group-text" style="width: 10rem;">소재지</span>
+				<div class="row gx-2">
+					<div class="col p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">소재지</div>
 				</div>
-			</div> 
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="date" aria-label="First name" class="form-control"> ~
-				  <input type="date" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">2016.03 ~</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">성균관대학교</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-2">
-				<div class="input-group">
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>선택</option>
-					  <option value="1">졸업</option>
-					  <option value="2">졸업유예</option>
-					  <option value="3">재학</option>
-					  <option value="4">휴학</option>
-					  <option value="5">중퇴</option>
-				</select>
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">재학</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">시각디자인과</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-1">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">서울</div>
 				</div>
-			</div> 
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="date" aria-label="First name" class="form-control"> ~
-				  <input type="date" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">2013.03 ~ 2016.02</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">한림연예예술고등학교</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-2">
-				<div class="input-group">
-				  <select class="form-select col-2" aria-label="Default select example">
-					  <option selected>선택</option>
-					  <option value="1">졸업</option>
-					  <option value="2">졸업유예</option>
-					  <option value="3">재학</option>
-					  <option value="4">휴학</option>
-					  <option value="5">중퇴</option>
-				</select>
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">졸업</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-3">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">-</div>
 				</div>
-			</div> 
+			</div>
 			<div class="col-1">
-				<div class="input-group">
-				  <input type="text" aria-label="First name" class="form-control">
+				<div class="row gx-2">
+					<div class="col p-2 bg-white border border-secondary border-opacity-25 rounded-3">서울</div>
 				</div>
-			</div> 
+			</div>
 		</div>
 	</div>
-	<br>
-	<br>
+	
+	
+	
+	
+	
+	
+	
+	
+	<hr>
+	
 	<div class="container">
 		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>교육연수</p>
 	</div>
