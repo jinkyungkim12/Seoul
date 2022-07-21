@@ -88,21 +88,16 @@
 	<div class="container">
 		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>기본정보</p>
 	</div>
-	
-	
-	
-	
-	
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-2">
 				<div class="row">
-					<div class="input-group">
-						<span class="input-group-text" style="width: 15rem;">사진</span>
-					</div>
-					<div class="input-group">
-						<input type="text" aria-label="First name" class="form-control" value="차은우.jpg" style="height: 12rem;">
+					<div class="col-12 p-2 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 rounded-3">사진</div>
+					<div class="col-12 bg-white border border-secondary border-opacity-25 rounded-3" style="height: 12rem;">
+						<div class="input-group image-container"> 
+						    <img id="preview-image" src="../image/cha2.jpg">
+						    <input style="display: block;" type="file" id="input-image">
+						</div>
 					</div>
 				</div>	
 			</div>										
@@ -310,6 +305,11 @@
 		</div>
 	</div>
 	<br>
+	<div class="container">
+		<button type="button" class="btn btn-outline-dark">추가하기</button>
+		<button type="button" class="btn btn-outline-dark">삭제하기</button>
+	</div>
+	<br>
 	<br>
 	<div class="container">
 		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>교육연수</p>
@@ -344,6 +344,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<br>
+	<div class="container">
+		<button type="button" class="btn btn-outline-dark">추가하기</button>
+		<button type="button" class="btn btn-outline-dark">삭제하기</button>
 	</div>
 	<br>
 	<br>
@@ -409,6 +414,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<br>
+	<div class="container">
+		<button type="button" class="btn btn-outline-dark">추가하기</button>
+		<button type="button" class="btn btn-outline-dark">삭제하기</button>
 	</div>
 	<br>
 	<br>
@@ -501,6 +511,11 @@
 		</div>
 	</div>
 	<br>
+	<div class="container">
+		<button type="button" class="btn btn-outline-dark">추가하기</button>
+		<button type="button" class="btn btn-outline-dark">삭제하기</button>
+	</div>
+	<br>
 	<br>
 	<div class="container">
 		<p class="fs-5 fw-semibold"><i class="fa-solid fa-pen-to-square"></i>자기소개서</p>
@@ -553,5 +568,27 @@
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function readImage(input) {
+		    // 인풋 태그에 파일이 있는 경우
+		    if(input.files && input.files[0]) {
+		        // 이미지 파일인지 검사 (생략)
+		        // FileReader 인스턴스 생성
+		        const reader = new FileReader()
+		        // 이미지가 로드가 된 경우
+		        reader.onload = e => {
+		            const previewImage = document.getElementById("preview-image")
+		            previewImage.src = e.target.result
+		        }
+		        // reader가 이미지 읽도록 하기
+		        reader.readAsDataURL(input.files[0])
+		    }
+		}
+		// input file에 change 이벤트 부여
+		const inputImage = document.getElementById("input-image")
+		inputImage.addEventListener("change", e => {
+		    readImage(e.target)
+		})
+	</script>
 </body>
 </html>
