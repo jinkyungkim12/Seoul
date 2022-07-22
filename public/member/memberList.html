@@ -101,11 +101,11 @@
 		</div>
 	</div>
 	<div class="container p-4 text-center">
-		<table class="table table-hover">
+		<table class="table table-hover" id="fruits">
 		  <thead>
 		    <tr class="table-dark text-white">
 		      <th scope="col" >
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check" onclick="selectAll(this)">
 		      </th>
 		      <th scope="col" >NO</th>
 		      <th scope="col">지원자</th>
@@ -119,10 +119,10 @@
 		  <tbody>
 		    <tr>
 		      <td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		      <th scope="row">1</th>
-		      <td><a href="memberView.html">차은우</a></td>
+		      <td><a href="memberModForm.html">차은우</a></td>
 		      <td>디자인</td>
 			  <td>신입</td>
 			  <td>010-1234-1234</td>
@@ -131,10 +131,10 @@
 		    </tr>
 		    <tr>
 		    	<td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		        <th scope="row">2</th>
-				<td><a href="memberView.html">송강</a></td>
+				<td><a href="memberModForm.html">송강</a></td>
 				<td>디자인</td>
 				<td>신입</td>
 				<td>010-1234-1234</td>
@@ -143,10 +143,10 @@
 		    </tr>
 		    <tr>
 		      <td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		        <th scope="row">3</th>
-				<td><a href="memberView.html">한소희</a></td>
+				<td><a href="memberModForm.html">한소희</a></td>
 				<td>프로그래밍</td>
 				<td>경력</td>
 				<td>010-1234-1234</td>
@@ -155,10 +155,10 @@
 		    </tr>
 		    <tr>
 		      <td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		      <th scope="row">4</th>
-		        <td><a href="memberView.html">박보영</a></td>
+		        <td><a href="memberModForm.html">박보영</a></td>
 				<td>프로그래밍</td>
 				<td>경력</td>
 				<td>010-1234-1234</td>
@@ -167,10 +167,10 @@
 		    </tr>
 		    <tr>
 		      <td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		        <th scope="row">5</th>
-		        <td><a href="memberView.html">이나영</a></td>
+		        <td><a href="memberModForm.html">이나영</a></td>
 				<td>프로그래밍</td>
 				<td>경력</td>
 				<td>010-1234-1234</td>
@@ -179,10 +179,10 @@
 		    </tr>
 		    <tr>
 		      <td>
-		      	<input type="checkbox">
+		      	<input type="checkbox" name="check">
 		      </td>
 		      <th scope="row">6</th>
-		      <td><a href="memberView.html">현빈</a></td>
+		      <td><a href="memberModForm.html">현빈</a></td>
 		      <td>프로그래밍</td>
 		      <td>신입</td>
 		      <td>010-1234-1234</td>
@@ -191,10 +191,10 @@
 		    </tr>
 		    <tr>
 		        <td>
-		      	 <input type="checkbox">
+		      	 <input type="checkbox" name="check">
 		        </td>
 		        <th scope="row">7</th>
-		        <td><a href="memberView.html">손예진</a></td>
+		        <td><a href="memberModForm.html">손예진</a></td>
 				<td>기계</td>
 				<td>신입</td>
 				<td>010-1234-1234</td>
@@ -203,10 +203,10 @@
 		    </tr>
 		    <tr>
 		    	<td>
-		      		<input type="checkbox">
+		      		<input type="checkbox" name="check">
 		        </td>
 		        <th scope="row">8</th>
-		        <td><a href="memberView.html">전지현</a></td>
+		        <td><a href="memberModForm.html">전지현</a></td>
 				<td>프로그래밍</td>
 				<td>신입</td>
 				<td>010-1234-1234</td>
@@ -215,10 +215,10 @@
 		    </tr>
 		    <tr>
 		    	<td>
-		      		<input type="checkbox">
+		      		<input type="checkbox" name="check">
 		        </td>
 		        <th scope="row">9</th>
-		        <td><a href="memberView.html">박보검</a></td>
+		        <td><a href="memberModForm.html">박보검</a></td>
 				<td>반도체</td>
 				<td>경력</td>
 				<td>010-1234-1234</td>
@@ -227,10 +227,10 @@
 		    </tr>
 		    <tr>
 		    	<td>
-		      		<input type="checkbox">
+		      		<input type="checkbox" name="check">
 		      	</td>
 		        <th scope="row">10</th>
-		        <td><a href="memberView.html">송혜교</a></td>
+		        <td><a href="memberModForm.html">송혜교</a></td>
 				<td>디자인</td>
 				<td>신입</td>
 				<td>010-1234-1234</td>
@@ -244,11 +244,11 @@
 	<div class="container">
 		<div class="row justify-content-between">	
 	   		<div class="col-10">
-	     		<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-minus"></i></button>
+	     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
 	     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
 	    	</div>
 	    	<div class="col-2">
-	     		<a type="button" class="btn btn-dark" href="memberRegForm.html">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
+	     		<a type="button" class="btn btn-dark" href="memberModForm.html">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
 				<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
 	    	</div>
 	    </div>	
@@ -296,5 +296,24 @@
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function selectAll(selectAll)  {
+		  const checkboxes 
+		       = document.getElementsByName('check');
+		  
+		  checkboxes.forEach((checkbox) => {
+		    checkbox.checked = selectAll.checked;
+		  })
+		}
+	</script>
+	<script type="text/javascript">
+		function deleteRow(rownum) {
+		  // table element 찾기
+		  const table = document.getElementById('fruits');
+		  
+		  // 행(Row) 삭제
+		  const newRow = table.deleteRow(rownum);
+		}
+	</script>
 </body>
 </html>
