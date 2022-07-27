@@ -224,8 +224,7 @@
 			background-color: #F5F5F5;
 		}
 		a:hover {
-		  color : #FC0071;
-		  background-color : #FED8E6;
+		  background-color : #FD3049;
 		}
 	</style>
 </head>
@@ -674,12 +673,12 @@
 							<div class="modal fade" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-hidden="true">
 							  <div class="modal-dialog modal-lg">
 							    <div class="modal-content">
-							      <div class="modal-header">
+							      <div class="modal-header">							      
 							        <h5 class="modal-title h4" id="exampleModalLgLabel">환불정책</h5>
 							        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							      </div>
-							      <div class="modal-body">
-							        ...
+							      <div class="modal-body text-center">
+							        <img src="../image/refund.png">
 							      </div>
 							       <div class="modal-footer">
 								       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
@@ -694,41 +693,43 @@
 			</div>
 			
 			<!-- 구매창 -->
-			<div class="col-4" style="margin-top: 2rem;" id="sticky">
-				<div class="shadow p-3 mb-5 bg-body rounded">
-					<div id="orderTop">굿즈 이모티콘 유랑 </div>
-					<div id="classTitle">[👍혜택연장] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기</div>
-					<div>
-						<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop1">선물하기</a>
-						<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop2">바로수강가능</a>
+			<div class="col-4" style="margin-top: 2rem;">
+				<div class="sticky-top">
+					<div class="shadow p-3 mb-5 bg-body rounded">
+						<div id="orderTop">굿즈 이모티콘 유랑 </div>
+						<div id="classTitle">[👍혜택연장] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기</div>
+						<div>
+							<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop1">선물하기</a>
+							<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop2">바로수강가능</a>
+						</div>
+						<div class="text-end" id="coupon">쿠폰 적용 시, 5개월 할부</div>
+						<div class="row justify-content-between">
+							<div class="col" id="couponDC">쿠폰 할인가</div><div class="col" id="Price">32% 월 43, 200원</div>
+						</div>
+						<div class="row justify-content-between" id="totalDC">
+							<div class="col">총 할인액</div><div class="col">- 103,400원</div>
+						</div>
+						<div class=" row justify-content-center">
+							<a type="button" href="#" role="button" class="btn btn-danger" id="button1">할인쿠폰 받기 <i class="fa-solid fa-download"></i></a>
+						</div>
+						<div class="row" id="bbb">
+							<div class="col-6"><i class="fa-brands fa-youtube"></i> 콘텐츠 이용권</div>
+							<div class="col-6"><i class="fa-solid fa-gifts"></i> 준비물 키트</div>
+						</div>
+						<div class="row" id="ccc">
+							<div class="col-6"><i class="fa-solid fa-user"></i> 초급자 대상</div>
+							<div class="col-6"><i class="fa-solid fa-thumbs-up"></i> 강의 만족도 99%</div>
+						</div>
+						<div class="text-center" id="ddd">
+							<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-heart"></i> 11701</a>
+							<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-arrow-up-from-bracket"></i> 공유하기</a>
+							<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-gift"></i> 선물하기</a>
+						</div>
+						<div class="row justify-content-center">
+							<a type="button" href="../order/orderRegForm_option.html" role="button" class="btn btn-danger" id="button3">구매하기 <i class="fa-solid fa-cart-shopping"></i></a>
+						</div>	
 					</div>
-					<div class="text-end" id="coupon">쿠폰 적용 시, 5개월 할부</div>
-					<div class="row justify-content-between">
-						<div class="col" id="couponDC">쿠폰 할인가</div><div class="col" id="Price">32% 월 43, 200원</div>
-					</div>
-					<div class="row justify-content-between" id="totalDC">
-						<div class="col">총 할인액</div><div class="col">- 103,400원</div>
-					</div>
-					<div class=" row justify-content-center">
-						<a type="button" href="#" role="button" class="btn btn-danger" id="button1">할인쿠폰 받기 <i class="fa-solid fa-download"></i></a>
-					</div>
-					<div class="row" id="bbb">
-						<div class="col-6"><i class="fa-brands fa-youtube"></i> 콘텐츠 이용권</div>
-						<div class="col-6"><i class="fa-solid fa-gifts"></i> 준비물 키트</div>
-					</div>
-					<div class="row" id="ccc">
-						<div class="col-6"><i class="fa-solid fa-user"></i> 초급자 대상</div>
-						<div class="col-6"><i class="fa-solid fa-thumbs-up"></i> 강의 만족도 99%</div>
-					</div>
-					<div class="text-center" id="ddd">
-						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-heart"></i> 11701</a>
-						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-arrow-up-from-bracket"></i> 공유하기</a>
-						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-gift"></i> 선물하기</a>
-					</div>
-					<div class="row justify-content-center">
-						<a type="button" href="#" role="button" class="btn btn-danger" id="button3">구매하기 <i class="fa-solid fa-cart-shopping"></i></a>
-					</div>	
-				</div>
+				</div>	
 			</div>		
 		</div>
 	</div>
