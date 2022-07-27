@@ -51,20 +51,101 @@
 			font-style: normal;
 			font-size: 17px;
 		}
+		#buttonTop1{
+			color: #FD3049;
+			font-family: 'Happiness-Sans-Bold';
+			margin-top: 1rem;
+		}
+		#buttonTop2{
+			color: gray;
+			font-family: 'Happiness-Sans-Bold';
+			margin-top: 1rem;
+		}
+		#coupon{
+			color: gray;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 14px;
+			margin-top: 2rem;
+		}
+		#couponDC{
+			color: black;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 16px;
+			margin-top: 1rem;
+		}
+		#Price{
+			color: black;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 18px;
+			margin-top: 1rem;
+		}
+		#totalDC{
+			color: #FD3049;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 18px;
+			margin-top: 1rem;
+		}
 		#button1{
 			width: 350px;
 			height: 40px;
 			background-color: #FD3049;
+			margin-top: 1.5rem;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			margin-top: 2rem;
+		}
+		#bbb{
+			color: black;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			margin-top: 2rem;
+		}
+		#ccc{
+			color: black;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			margin-top: 1rem;
+		}
+		#ddd{
+			color: black;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			margin-top: 1.5rem;
 		}
 		#button2{
 			width: 100px;
 			height: 40px;
 			background-color: #EFEFEF;
+			margin-top: 1.5rem;
 		}
 		#button3{
 			width: 350px;
 			height: 40px;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
 			background-color: #FF5600;
+			margin-top: 1.5rem;
+		}
+		#orderTop{
+			color: #5A5757;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 17px;
+		}
+		#classTitle{
+			color: black;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 20px;
+			margin-top: 1rem;
+		}
+		#reviewHead{
+			margin-top: 5rem;
+			font-family: 'Happiness-Sans-Bold';
 		}
 	</style>
 </head>
@@ -179,40 +260,47 @@
 					<div class="col-2"><span></span></div>
 				</div>
 				 
+				<!-- 후기 -->
+				<div id="reviewHead"><h3>실제 수강생들의<br>생생한 스토리</h3></div>
+				<div><img src="../image/review.png"></div>
 				
 				
 				
 			</div>
+			
+			
+			
+			<!-- 구매창 -->
 			<div class="col-4 sticky-top" style="margin-top: 2rem;">
 				<div class="shadow p-3 mb-5 bg-body rounded">
-					<div id="">굿즈 이모티콘 유랑 </div>
-					<div id="">[👍혜택연장] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기</div>
+					<div id="orderTop">굿즈 이모티콘 유랑 </div>
+					<div id="classTitle">[👍혜택연장] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기</div>
 					<div>
-						<a type="button" href="#" role="button" class="btn btn-light btn-sm">선물하기</a>
-						<a type="button" href="#" role="button" class="btn btn-light btn-sm">바로수강가능</a>
+						<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop1">선물하기</a>
+						<a type="button" href="#" role="button" class="btn btn-light" id="buttonTop2">바로수강가능</a>
 					</div>
-					<div class="text-end">쿠폰 적용 시, 5개월 할부</div>
+					<div class="text-end" id="coupon">쿠폰 적용 시, 5개월 할부</div>
 					<div class="row justify-content-between">
-						<div class="col">쿠폰 할인가</div><div class="col">32% 월 43, 200원</div>
+						<div class="col" id="couponDC">쿠폰 할인가</div><div class="col" id="Price">32% 월 43, 200원</div>
 					</div>
-					<div class="row justify-content-between">
+					<div class="row justify-content-between" id="totalDC">
 						<div class="col">총 할인액</div><div class="col">- 103,400원</div>
 					</div>
 					<div class=" row justify-content-center">
 						<a type="button" href="#" role="button" class="btn btn-danger" id="button1">할인쿠폰 받기 <i class="fa-solid fa-download"></i></a>
 					</div>
-					<div class="row">
+					<div class="row" id="bbb">
 						<div class="col-6"><i class="fa-brands fa-youtube"></i> 콘텐츠 이용권</div>
 						<div class="col-6"><i class="fa-solid fa-gifts"></i> 준비물 키트</div>
 					</div>
-					<div class="row">
+					<div class="row" id="ccc">
 						<div class="col-6"><i class="fa-solid fa-user"></i> 초급자 대상</div>
 						<div class="col-6"><i class="fa-solid fa-thumbs-up"></i> 강의 만족도 99%</div>
 					</div>
-					<div class="text-center">
-						<a type="button" href="#" role="button" class="btn btn-light btn-sm"><i class="fa-solid fa-heart"></i> 11701</a>
-						<a type="button" href="#" role="button" class="btn btn-light btn-sm"><i class="fa-solid fa-arrow-up-from-bracket"></i> 공유하기</a>
-						<a type="button" href="#" role="button" class="btn btn-light btn-sm"><i class="fa-solid fa-gift"></i> 선물하기</a>
+					<div class="text-center" id="ddd">
+						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-heart"></i> 11701</a>
+						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-arrow-up-from-bracket"></i> 공유하기</a>
+						<a type="button" href="#" role="button" class="btn btn-light"><i class="fa-solid fa-gift"></i> 선물하기</a>
 					</div>
 					<div class="row justify-content-center">
 						<a type="button" href="#" role="button" class="btn btn-danger" id="button3">구매하기 <i class="fa-solid fa-cart-shopping"></i></a>
