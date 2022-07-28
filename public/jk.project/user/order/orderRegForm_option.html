@@ -36,6 +36,59 @@
 			font-family: 'Happiness-Sans-Regular';
 			font-style: normal;
 		}
+		#freeship{
+			color: #00B031;
+			font-size: 20px;
+		}
+		#contentFont2{
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+		}
+		.RC{
+			background-color: #FF5600;
+			color: white;
+			font-weight: bold;
+			width: 50px;
+			text-align: center;
+		}
+		.head{
+			font-weight: bold;
+			font-size: 22px;
+			margin-top: 1rem;
+		}
+		.classOption{
+			margin-top: 1rem;
+			font-size: 20px;
+		}
+		.discount{
+			font-size: 15px;
+			color: red;
+			margin-left: 2rem;
+			margin-top: 2rem;
+		}
+		.price{
+			font-size: 15px;
+			color: gray;
+			margin-top: 2rem;
+		}
+		.price2{
+			font-size: 20px;
+			color: #A9A9A9;
+			text-align: end;
+			margin-right: 2rem;
+			font-weight: bold;
+		}
+		.discount2{
+			font-size: 30px;
+			font-weight: bold;
+			color: red;
+		}
+		.price3{
+			font-size: 20px;
+			text-align: end;
+			margin-right: 2rem;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
@@ -93,13 +146,79 @@
 	
 	<div class="container" id="contentFont">
 		<div class="row" style="margin-top: 3rem;"><h1><b>패키지 선택하기</b></h1></div>
-		<div class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 2rem;">
+		<div class="row text-end" id="freeship"><span><i class="fa-solid fa-circle-check"></i> 무료배송</span></div>
+		<div class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 1rem;">
 			<div class="row"><h4><i class="fa-solid fa-circle-info"></i> <b>배송안내</b></h4></div>
-			<div><span> </span></div>
+			<div style="margin-top: 1rem;">
+				<span> 
+					키트가 포함된 패키지 구매 시, 택배 배송기간을 포함하여 수강기간은 7일이 자동 연장됩니다. 
+					제주/도서산간지역은 추가 배송료가 발생할 수 있으며, 이 경우 별도의 입금이 필요합니다.
+					<br><br>
+				</span>
+			</div>
 		</div>
 	</div>
 	
-
+	<!-- content 2 -->
+	
+	<div class="container" id="contentFont2">
+		<div class="row">
+			<div class="col-5">
+				<div class="shadow p-3 mb-5 bg-body rounded">
+					<div class="RC">추천</div>
+					<div class="head">카카오톡 이모티콘 제작 수강권 Only</div>
+					<div class="classOption"><i class="fa-solid fa-display"></i> 유랑 온라인 수강권 (20주)</div>
+					<div>
+						<span class="discount">19%</span>
+						<span class="price">256,000원</span>
+					</div>
+					<hr style="margin-top: 9.4rem;">
+					<div class="price2">
+						<span class="text-decoration-line-through">319,400원</span>&emsp;
+						<span>256,000원</span>
+					</div>
+					<div><span class="discount2">19%</span></div>
+					<div class="text-end">
+						<span class="month"><small>5개월 할부 시</small></span>&emsp;
+						<span class="price3">월 51,200원</span>
+					</div>
+					<div>패키지 선택하기</div>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="shadow p-3 mb-5 bg-body rounded">
+					<div class="RC">추천</div>
+					<div class="head">카카오톡 이모티콘 제작 아이패드 선택 패키지</div>
+					<div class="classOption"><i class="fa-solid fa-display"></i> 유랑 온라인 수강권 (20주)</div>
+					<div>
+						<span class="discount">19%</span>
+						<span class="price">256,000원</span>
+					</div>
+					<div class="classOption"><i class="fa-solid fa-gift"></i> 아이패드 (구버전)</div>
+					<div>
+						<span class="discount">2%</span>
+						<span class="price">440,020원</span>
+					</div>
+					<hr style="margin-top: 5rem;">
+					<div class="price2">
+						<span class="text-decoration-line-through">764,400원</span>&emsp;
+						<span>696,020원</span>
+					</div>
+					<div><span class="discount2">9%</span></div>
+					<div class="text-end">
+						<span><small>5개월 할부 시</small></span>&emsp;
+						<span class="price3">월 139,204원</span>
+					</div>
+					<div>패키지 선택하기</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	
+	
+	
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
