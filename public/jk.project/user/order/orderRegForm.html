@@ -56,6 +56,45 @@
 		#mip{
 			color: gray;
 		}
+		#DCcoupon{
+			color: red;
+		}
+		#buttonPrice{
+			width: 500px;
+			height: 40px;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			background-color: #FF5600;
+			margin-top: 2rem;
+		}
+		.endTitle{
+			color: black;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 20px;
+		}
+		#endContent1{
+			color: black;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			font-size: 17px;
+		}
+		.endContent2{
+			color: black;
+			font-family: 'Happiness-Sans-Regular';
+			font-style: normal;
+			font-size: 14px;
+			margin-top: 2rem;
+		}
+		#endButton{
+			color: black;
+			font-family: 'Happiness-Sans-Bold';
+			font-style: normal;
+			font-size: 20px;
+			margin-top: 2rem;
+			width: 20rem;
+			background-color: #F5F5F5;
+		}
 	</style>
 </head>
 <body>
@@ -200,7 +239,7 @@
 		<div class="row" style="margin-top: 3rem;"><h4><b>결제 금액</b></h4></div>
 		<div class="row" style="margin-top: 1rem;">
 			<div class="col-10"><span><b>총 상품금액</b></span></div>
-			<div class="col-2 text-end"><span>319,400원</span></div>
+			<div class="col-2 text-end"><span><b>319,400원</b></span></div>
 		</div>
 		<div class="row" style="margin-top: 1rem;">
 			<div class="col-10"><span><b>상품 할인 금액</b></span></div>
@@ -208,7 +247,7 @@
 		</div>
 		<div class="row" style="margin-top: 1rem;">
 			<div class="col-10"><span><b>쿠폰 할인 금액</b></span></div>
-			<div class="col-2 text-end"><span> - 40,000원</span></div>
+			<div class="col-2 text-end" id="DCcoupon"><span> - 40,000원</span></div>
 		</div>
 		<div class="row justify-content-end" style="margin-top: 1rem;">5개월 할부 시 월 43,200원</div>
 		<div class="row" style="margin-top: 1rem;">
@@ -216,7 +255,55 @@
 			<div class="col-8" id="mip">무이자 할부 가능</div>
 			<div class="col-2 text-end" id="finalPrice"><span><h5><b>216,000원</b></h5></span></div>
 		</div>
+		<hr class="hrstyle">
+		<div class="row" style="margin-top: 3rem;"><h4><b>결제 방식</b></h4></div>
+		<div class="row" style="margin-top: 1rem; margin-left: 3rem;">
+			<div class="col-2 form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" checked>
+			  <label class="form-check-label" for="flexRadioDefault1">카카오페이</label>
+			</div>
+			<div class="col-2 form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2">
+			  <label class="form-check-label" for="flexRadioDefault2">무통장 입금</label>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<a type="button" href="#" role="button" class="btn btn-danger" id="buttonPrice">결제 하기</a>
+		</div>	
 	</div>
+	
+	<!-- 끝 -->
+	<div class="container">
+		<div class="row" style="margin-top: 5rem;">
+			<div class="col-4">
+				<div><img src="../image/classlogo.png" alt="" width="300" height="121"></div>
+				<div><span id="endContent1">클래스 101은 모든 사람이 사랑하는 일을 하며<br>살 수 있도록 세상을 바꾸고자 합니다.</span></div>
+				<br>
+				<br>
+				<div><span id="endContent1"><small>KR</small>&nbsp;한국어</span></div>
+			</div>
+			<div class="col-2">
+				<div class="endTitle">클래스 101</div>
+				<div class="endContent2">홈</div>
+				<div class="endContent2">기업교육</div>
+				<div class="endContent2">채용</div>
+				<div class="endContent2">도움말</div>
+			</div>
+			<div class="col-2">
+					<div class="endTitle">크리에이터</div>
+					<div class="endContent2">크리에이터 센터</div>
+					<div class="endContent2">정규 클래스 지원하기</div>
+					<div class="endContent2">도움말</div>
+			</div>
+			<div class="col-4">
+					<div class="endTitle">고객센터</div>
+					<div class="text-center"><a type="button" href="#" role="button" class="btn btn-light" id="endButton">문의하기</a></div>
+					<div class="endContent2 text-center">오전 10시 ~ 오후 6시 (주말, 공휴일 제외)</div> 
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>	
 	
 		
 
