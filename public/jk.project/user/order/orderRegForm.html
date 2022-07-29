@@ -34,12 +34,21 @@
 		}
 		#containerFont{
 			font-family: 'Happiness-Sans-Regular';
-			width: 1000px;
+			width: 900px;
 		}
 		.hrstyle{
 			border: 0;
 		    height: 17px;
-		    background: #ccc;
+		    background: #616060;
+		}
+		.down{
+			color: gray;
+		}
+		#zipcode{
+			width: 215px;
+		}
+		.input{
+			width: 900px;
 		}
 	</style>
 </head>
@@ -98,7 +107,7 @@
 	<div class="container" id="containerFont">
 		<div class="row" style="margin-top: 5rem;"><h2><b>결제하기</b></h2></div>
 		<hr class="hrstyle">
-		<div class="row" style="margin-top: 3rem;"><h4><b>주문정보</b></h4></div>
+		<div class="row" style="margin-top: 3rem;"><h4><b>주문 정보</b></h4></div>
 		<div class="row" style="margin-top: 0.5rem;"><span>유랑 온라인 수강권 (20주)</span></div>
 		<div><img src="https://cdn.class101.net/images/27b658a7-53e1-47ca-a1bd-6c9bb5f7f93b/2048xauto.webp" width="150px" height="120px"></div>
 		<div class="row" style="margin-top: 3rem;"><h4><b>선택한 구성품</b></h4></div>
@@ -124,10 +133,65 @@
 		</div>
 		<br>	
 		<hr class="hrstyle">
-	
-	
-	
-	
+		<div class="row" style="margin-top: 3rem;"><h4><b>배송 정보</b></h4></div>
+		<div class="row" style="margin-top: 1rem;">
+			<label class="form-label"><b>받으시는 분</b></label>
+	   		<div class="input"><input type="text" class="form-control" value="" placeholder="이름"></div>
+	   		<div style="margin-top: 0.5rem;"><span class="down">배송시 수령인  확인을 위해 실명을 입력해 주세요.</span></div>
+		</div>
+		<div class="row" style="margin-top: 1rem;">
+			<label class="form-label"><b>휴대폰 번호</b></label>
+	   		<div class="input"><input type="text" class="form-control" value="" placeholder="010-0000-0000"></div>
+		</div>
+		<div class="row" style="margin-top: 1rem;">
+			<label class="form-label"><b>배송주소</b></label>
+	   		<div class="row">
+		   		<div class="col-9">
+		   			<input type="text" class="form-control" value="" placeholder="우편번호">
+		   		</div>
+		   		<div class="col-3">
+		   			<a type="button" href="#" role="button" class="btn btn-dark" id="zipcode">우편번호 찾기</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 1rem;">
+			<div class="input"><input type="text" class="form-control" value="" placeholder="주소"></div>
+		</div>
+		<div class="row" style="margin-top: 1rem;">
+			<div class="input"><input type="text" class="form-control" value="" placeholder="상세 주소"></div>
+		</div>
+		<div class="row" style="margin-top: 1rem;">
+			<label class="form-label"><b>배송 요청 사항</b></label>
+	   		<div class="input"><input type="text" class="form-control" value="" placeholder="예) 경비실에 맡겨주세요."></div>
+		</div>
+		<hr class="hrstyle">
+		<div class="row" style="margin-top: 3rem;"><h4><b>쿠폰/캐시</b></h4></div>
+		<div class="row" style="margin-top: 1rem;">
+			<label class="form-label"><b>쿠폰</b></label>
+	   		<div class="row">
+		   		<div class="col-9">
+		   			<input type="text" class="form-control" value="40,000원" placeholder="">
+		   		</div>
+		   		<div class="col-3">
+		   			<a type="button" href="#" role="button" class="btn btn-dark" id="zipcode">쿠폰 변경</a>
+				</div>
+			</div>
+			<div style="margin-top: 0.5rem;"><span class="down">적용 쿠폰 <7월 로그인 기념 쿠폰 > 4만원 바로수강 클래스 할인</span></div>
+		</div>
+		<div class="row" style="margin-top: 2rem;">
+			<label class="form-label"><b>캐시</b></label>
+	   		<div class="row">
+		   		<div class="col-9">
+		   			<input type="text" class="form-control" value="" placeholder="0원">
+		   		</div>
+		   		<div class="col-3">
+		   			<a type="button" href="#" role="button" class="btn btn-dark" id="zipcode">잔액 사용</a>
+				</div>
+				<div style="margin-top: 0.5rem;"><span class="down">사용가능한 캐시 0원</span></div>
+			</div>
+		</div>
+		
+		
 	</div>
 	
 		
