@@ -48,14 +48,8 @@
 		.input{
 			width: 900px;
 		}
-		#finalPrice{
-			color: red;
-		}
-		#mip{
+		#gray{
 			color: gray;
-		}
-		#DCcoupon{
-			color: red;
 		}
 		.endTitle{
 			color: black;
@@ -198,36 +192,25 @@
 		<div class="row" style="margin-top: 3rem;"><h4><b>결제 성공</b></h4></div>
 		<div class="row" style="margin-top: 1.5rem;"><h6><b>결제 수단</b></h6></div>
 		<hr style="margin-top: 1rem;">
-		<div class="row" style="margin-top: 1rem;">
-			<div class="col-10"><span><b>총 상품금액</b></span></div>
-			<div class="col-2 text-end"><span>319,400원</span></div>
-		</div>
-		<div class="row" style="margin-top: 1rem;">
-			<div class="col-10"><span><b>상품 할인 금액</b></span></div>
-			<div class="col-2 text-end"><span> - 63,400원</span></div>
-		</div>
-		<div class="row" style="margin-top: 1rem;">
-			<div class="col-10"><span><b>쿠폰 할인 금액</b></span></div>
-			<div class="col-2 text-end"><span> - 40,000원</span></div>
-		</div>
-		<div class="row justify-content-end" style="margin-top: 1rem;">5개월 할부 시 월 43,200원</div>
-		<div class="row" style="margin-top: 1rem;">
-			<div class="col-2" id="finalPrice"><h5><b>최종 가격</b></h5></div>
-			<div class="col-8" id="mip">무이자 할부 가능</div>
-			<div class="col-2 text-end" id="finalPrice"><span><h5><b>216,000원</b></h5></span></div>
-		</div>
-		<hr class="hrstyle">
-		<div class="row" style="margin-top: 3rem;"><h4><b>결제 방식</b></h4></div>
-		<div class="row" style="margin-top: 1rem; margin-left: 3rem;">
-			<div class="col-2 form-check">
-			  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1" checked>
-			  <label class="form-check-label" for="flexRadioDefault1">카카오페이</label>
+		<div id="gray">
+			<div class="row" style="margin-top: 1rem;">
+				<div class="col-10"><span><b>총 상품금액</b></span></div>
+				<div class="col-2 text-end"><span>319,400원</span></div>
 			</div>
-			<div class="col-2 form-check">
-			  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2">
-			  <label class="form-check-label" for="flexRadioDefault2">무통장 입금</label>
+			<div class="row" style="margin-top: 1rem;">
+				<div class="col-10"><span><b>상품 할인 금액</b></span></div>
+				<div class="col-2 text-end"><span> - 63,400원</span></div>
 			</div>
-		</div>
+			<div class="row" style="margin-top: 1rem;">
+				<div class="col-10"><span><b>쿠폰 할인 금액</b></span></div>
+				<div class="col-2 text-end"><span> - 40,000원</span></div>
+			</div>
+			<hr style="margin-top: 1rem;">
+			<div class="row" style="margin-top: 1rem;">
+				<div class="col-2" id="finalPrice"><h5><b>총 결제 금액</b></h5></div>
+				<div class="col-2 text-end" id="finalPrice"><span><h5><b>188,800원</b></h5></span></div>
+			</div>
+		</div>	
 		<div class="row justify-content-center">
 			<a type="button" href="orderView.html" role="button" class="btn btn-danger" id="buttonPrice">결제 하기</a>
 		</div>	
