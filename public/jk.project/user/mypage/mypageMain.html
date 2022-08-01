@@ -57,6 +57,12 @@
 		.progressRate{
 			color: red;
 		}
+		#button1{
+			width: 50rem;
+			font-size: 20px;
+			margin-top: 2rem;
+			background-color: #F5F5F5;
+		}
 		.eventTitle{
 			color: black;
 			font-family: 'Happiness-Sans-Bold';
@@ -226,7 +232,7 @@
 					<div class="col-4" style="margin-top: 0.5rem;">
 						<div class="row">
 							<div class="col-4"><span class="progressRate"><small>50% 수강중</small></span></div>
-							<div class="progress" style="margin-top: 0.8rem; width: 170px; height: 3px;">
+							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
 							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
@@ -234,7 +240,7 @@
 					<div class="col-4" style="margin-top: 0.5rem;">
 						<div class="row">
 							<div class="col-4"><span class="progressRate"><small>75% 수강중</small></span></div>
-							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px;">
+							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
 							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
@@ -242,15 +248,46 @@
 					<div class="col-4" style="margin-top: 0.5rem;">
 						<div class="row">
 							<div class="col-4"><span class="progressRate"><small>25% 수강중</small></span></div>
-							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px;">
+							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
 							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</div>
-					<div class="col-4"></div>
-					<div class="col-4"></div>
-					<div class="col-4"></div>
+					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 20일 남음</span></div>
+					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 50일 남음</span></div>
+					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 10일 남음</span></div>
 				</div>
+				<div style="margin-top: 2rem;"><h5><b>내가 본 상품</b></h5></div>
+				<div class="row">
+					<div class="col-4">
+						<div class="card" style="width: 17rem;">
+						  <img src="../image/p2.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <p class="card-text"><b>토익독학길잡이</b><br>[💣24시간] 국내 1위 토익 유튜버의 '해석을 위한 문법'<br><br></p>
+						    <hr>
+						    <span class="discount">46%</span>
+						    <span class="price">월 24,200원</span>
+						    <span class="month">(5개월)</span>
+						  </div>
+						</div>
+					</div>	
+					<div class="col-4">
+						<div class="card" style="width: 17rem;">
+						  <img src="../image/p3.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <p class="card-text"><b>아로스</b><br>[💣24시간] [2022년 New 노하우] 하루 1시간 월 100만원, 애드센스 블로그로 만드는 법!</p>
+						    <hr>
+						    <span class="discount">33%</span>
+						    <span class="price">월 45,800원</span>
+						    <span class="month">(5개월)</span>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 수강권 코드 등록하기</b></a>
+				</div>	
+			</div>	
 			</div>
 		</div>
 	</div>
