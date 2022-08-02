@@ -39,6 +39,11 @@
 			font-style: normal;
 			font-size: 15px;
 		}
+		#logoutButton{
+			width: 7rem;
+			background-color: #FF5600;
+			color: white;
+		}
 		#containerFont{
 			font-family: 'Happiness-Sans-Regular';
 		}
@@ -150,18 +155,31 @@
 				 </nav>  
 			</div>
 			<div class="col">
-				<ul class="nav justify-content-end" id="leftList">
-					<div class="btn-group">
-					  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-					    로그아웃
-					  </button>
-					  <ul class="dropdown-menu">
-					    <li><a class="dropdown-item" href="#">마이페이지</a></li>
-					    <li><hr class="dropdown-divider"></li>
-					    <li><a class="dropdown-item" href="#">로그아웃</a></li>
-					  </ul>
+				<div class="row text-end">
+					<div class="dropdown">
+						<a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="avatar-parent-child">
+								<img alt="..." src="../image/profile.png" class="avatar avatar- rounded-circle"> 
+								<span class="avatar-child avatar-badge bg-success"></span>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+							<div class="container">
+								<div class="row">
+									<div class="col-4 text-center">
+										<img alt="..." src="../image/profile.png" class="avatar avatar- rounded-circle"> 
+									</div>
+									<div class="col-8 text-center" style="margin-top: 0.9rem;">
+										<h5><b>김진경</b></h5>
+									</div>
+								</div>
+								<a href="#" class="dropdown-item text-center" style="color: #FF5600">마이페이지 <i class="fa-solid fa-angle-right"></i></a> 
+								<hr class="dropdown-divider">
+								<div class="row justify-content-center"><a type="button" href="#" class="btn btn-light rounded rounded-pill" id="logoutButton">Logout</a></div>
+							</div>
+						</div>
 					</div>
-				</ul>
+				</div>	
 			</div>	
 		</div>
 	</div>

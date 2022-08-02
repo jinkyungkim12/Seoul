@@ -9,23 +9,31 @@
 <body>
 
 <!-- start -->
-	
-	<div class="dropdown">
-		<a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			<div class="avatar-parent-child">
-				<img alt="..." src="../image/profile.png" class="avatar avatar- rounded-circle"> 
-				<span class="avatar-child avatar-badge bg-success"></span>
+	<div class="row text-end">
+		<div class="dropdown">
+			<a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="avatar-parent-child">
+					<img alt="..." src="../image/profile.png" class="avatar avatar- rounded-circle"> 
+					<span class="avatar-child avatar-badge bg-success"></span>
+				</div>
+			</a>
+			<div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+				<div class="container">
+					<div class="row">
+						<div class="col-5 text-center">
+							<img alt="..." src="../image/profile.png" class="avatar avatar- rounded-circle"> 
+						</div>
+						<div class="col-7 text-center">
+							<span>김진경</span>
+						</div>
+					</div>
+					<a href="#" class="dropdown-item text-center" style="color: #FF5600">마이페이지 <i class="fa-solid fa-angle-right"></i></a> 
+					<hr class="dropdown-divider">
+					<div class="row text-center"><a type="button" href="#" class="btn btn-danger">Logout</a></div>
+				</div>
 			</div>
-		</a>
-		<div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
-			<a href="#" class="dropdown-item">Profile</a> 
-			<a href="#" class="dropdown-item">Settings</a> 
-			<a href="#" class="dropdown-item">Billing</a>
-			<hr class="dropdown-divider">
-			<a href="#" class="dropdown-item">Logout</a>
 		</div>
-	</div>
-	
+	</div>	
 
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
