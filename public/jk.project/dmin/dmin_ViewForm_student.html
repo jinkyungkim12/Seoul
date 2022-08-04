@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>dmin_RegForm_student</title>
+	<title>dmin_ViewForm_student</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
 		.container{
@@ -107,24 +107,24 @@
 		<div class="row gy-3" id="firstrow">
 			<div class="col-6">
 				<label class="form-label">이름</label>
-	   			<input type="text" class="form-control" value="" placeholder="이름">
+	   			<input type="text" class="form-control" value="차은우" placeholder="" readonly>
 			</div>
 			<div class="col-6">
 				<label class="form-label">아이디</label>
-	   			<input type="text" class="form-control" value="" placeholder="아이디">
+	   			<input type="text" class="form-control" value="chacha" placeholder="" readonly>
 			</div>
 			<div class="col-6">
 				<label class="form-label">비밀번호</label>
-	   			<input type="password" class="form-control" value="" placeholder="비밀번호">
+	   			<input type="password" class="form-control" value="***********" placeholder="" readonly>
 	   			<small style="color: gray;"><i class="fa-solid fa-circle-info"></i> 영문 대문자/영문 소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</small>
 			</div>
 			<div class="col-6">
 				<label class="form-label">비밀번호 확인</label>
-	   			<input type="password" class="form-control" value="" placeholder="비밀번호 확인">
+	   			<input type="password" class="form-control" value="***********" placeholder="" readonly>
 			</div>
 			<div class="col-6">
 				<label class="form-label">생년월일</label>
-	   			<input type="date" class="form-control" value="">
+	   			<input type="date" class="form-control" value="1997-03-30" readonly>
 			</div>
 			<div class="col-6">
 				<label class="form-label">성별</label>
@@ -146,42 +146,42 @@
 			<div class="col-6">
 				<label class="form-label">연락처(필수)</label>
 					<div class="input-group">
-					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
+					  <select class="form-select col-2" aria-label="Default select example" readonly> 
+						  <option selected>SKT</option>
 						  <option value="1">SKT</option>
 						  <option value="2">LGT</option>
 						  <option value="3">KT</option>
 					  </select>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="010" readonly>
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="1997" readonly>
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="0330" readonly>
 					</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">연락처(선택)</label>
 					<div class="input-group">
 					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
+						  <option selected>SKT</option>
 						  <option value="1">SKT</option>
 						  <option value="2">LGT</option>
 						  <option value="3">KT</option>
 					  </select>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="010" readonly>
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="1997" readonly>
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="0331" readonly>
 					</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">이메일</label>
-	   			<input type="text" class="form-control" value="" placeholder="example@naver.com">
+	   			<input type="text" class="form-control" value="chacha@naver.com" placeholder="" readonly>
 			</div>
 			<div class="col-6">
 				<label class="form-label">주소</label>
-	   			<input type="text" class="form-control" value="" placeholder="서울시 oo구 oo동 oo아파트">
+	   			<input type="text" class="form-control" value="서울시 양천구 목동 목동아파트" placeholder="" readonly>
 			</div>
 			<div class="col-3">
 				<label class="form-label">모바일 수신동의</label>
@@ -221,7 +221,7 @@
 				<label class="form-label">개인정보 유효기간</label>
 				<div class="row" style="margin-left: 10px;">
 					<div class="col-3 form-check">
-					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" checked>
+					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1">
 					  <label class="form-check-label" for="flexRadioDefault1">
 					    1년
 					  </label>
@@ -239,7 +239,7 @@
 					  </label>
 					</div>
 					<div class="col-3 form-check">
-					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4">
+					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4" checked>
 					  <label class="form-check-label" for="flexRadioDefault4">
 					    평생회원
 					  </label>
