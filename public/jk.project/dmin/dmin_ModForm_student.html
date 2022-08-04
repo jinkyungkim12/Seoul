@@ -107,24 +107,24 @@
 		<div class="row gy-3" id="firstrow">
 			<div class="col-6">
 				<label class="form-label">이름</label>
-	   			<input type="text" class="form-control" value="" placeholder="">
+	   			<input type="text" class="form-control" value="차은우" placeholder="">
 			</div>
 			<div class="col-6">
 				<label class="form-label">아이디</label>
-	   			<input type="text" class="form-control" value="" placeholder="">
+	   			<input type="text" class="form-control" value="chacha" placeholder="">
 			</div>
 			<div class="col-6">
 				<label class="form-label">비밀번호</label>
-	   			<input type="password" class="form-control" value="" placeholder="">
+	   			<input type="password" class="form-control" value="enwsakjflajsf" placeholder="">
 	   			<small style="color: gray;"><i class="fa-solid fa-circle-info"></i> 영문 대문자/영문 소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</small>
 			</div>
 			<div class="col-6">
 				<label class="form-label">비밀번호 확인</label>
-	   			<input type="password" class="form-control" value="" placeholder="">
+	   			<input type="password" class="form-control" value="enwsakjflajsf" placeholder="">
 			</div>
 			<div class="col-6">
 				<label class="form-label">생년월일</label>
-	   			<input type="date" class="form-control" value="">
+	   			<input type="date" class="form-control" value="1997-03-30">
 			</div>
 			<div class="col-6">
 				<label class="form-label">성별</label>
@@ -147,41 +147,41 @@
 				<label class="form-label">연락처(필수)</label>
 					<div class="input-group">
 					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
+						  <option selected>SKT</option>
 						  <option value="1">SKT</option>
 						  <option value="2">LGT</option>
 						  <option value="3">KT</option>
 					  </select>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="010">
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="1997">
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="0330">
 					</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">연락처(선택)</label>
 					<div class="input-group">
 					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
+						  <option selected>SKT</option>
 						  <option value="1">SKT</option>
 						  <option value="2">LGT</option>
 						  <option value="3">KT</option>
 					  </select>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="010">
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="1997">
 					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
+					  <input type="mobile" class="form-control" value="0331">
 					</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">이메일</label>
-	   			<input type="text" class="form-control" value="" placeholder="example@naver.com">
+	   			<input type="text" class="form-control" value="chacha@naver.com" placeholder="">
 			</div>
 			<div class="col-6">
 				<label class="form-label">주소</label>
-	   			<input type="text" class="form-control" value="" placeholder="서울시 oo구 oo동 oo아파트">
+	   			<input type="text" class="form-control" value="서울시 양천구 목동 목동아파트" placeholder="">
 			</div>
 			<div class="col-3">
 				<label class="form-label">모바일 수신동의</label>
@@ -221,7 +221,7 @@
 				<label class="form-label">개인정보 유효기간</label>
 				<div class="row" style="margin-left: 10px;">
 					<div class="col-3 form-check">
-					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1" checked>
+					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1">
 					  <label class="form-check-label" for="flexRadioDefault1">
 					    1년
 					  </label>
@@ -239,7 +239,7 @@
 					  </label>
 					</div>
 					<div class="col-3 form-check">
-					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4">
+					  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4" checked>
 					  <label class="form-check-label" for="flexRadioDefault4">
 					    평생회원
 					  </label>
@@ -254,8 +254,12 @@
 	
 	<div class="container">
 		<div class="row justify-content-center" style="margin-top: 3rem;">
-			<div class="col-3 text-center"><a type="button" class="btn" href="dmin_ViewForm_student.html" id="Modification">등록하기</a></div>
-			<div class="col-3 text-center"><a type="button" class="btn" href="dmin_List.html" id="back">뒤로가기</a></div>
+			<div class="col-3 text-center">
+				<a type="button" class="btn" href="dmin_ViewForm_student.html" id="Modification"><i class="fa-solid fa-box-archive"></i> 저장하기</a>
+			</div>
+			<div class="col-3 text-center">
+				<a type="button" class="btn" href="dmin_List.html" id="back"><i class="fa-solid fa-x"></i> 취소하기</a>
+			</div>
 		</div>
 	</div>
 	<br>
