@@ -219,94 +219,238 @@
 
 			<!-- 오른쪽 -->
 			<div class="col-8">
-				<div class="row">
+				
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				  <li class="nav-item" role="presentation">
+				    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">마이페이지</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+				    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">주문 목록</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+				    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">주문 상세</button>
+				  </li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+				  
+				  
+				  <!-- 첫 번째 탭 -->	
+				  
+				  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+				  	<div style="margin-top: 2rem;"><h5><b>내 스토어 상품</b></h5></div>
+					<div class="row">
+						<div class="col-4">
+							<img src="https://cdn.class101.net/images/dfd02760-c3e2-4ea7-8eb1-a93cf10fa746/375xauto.webp" width="260" height="200">
+						</div>
+						<div class="col-4">
+							<img src="https://cdn.class101.net/images/cb2119ec-b977-49e3-a1a4-b674081ed809/750xauto.webp" width="260" height="200">
+						</div>
+						<div class="col-4">
+							<img src="https://cdn.class101.net/images/b50a51a8-b06d-4bb6-97a1-1371a179573a/750xauto.webp" width="260" height="200">
+						</div>
+						<div class="col-4" style="margin-top: 1rem;">
+							<span><b>인스타그램으로 세상에 나의 가치를 알려<br>보자. 인스타그램 퍼스널 브랜딩</b></span>
+						</div>
+						<div class="col-4" style="margin-top: 1rem;">
+							<span><b>초보 그림러가 인기 작가가 되는 법, 콕스<br>의 독학비법서</b></span>
+						</div>
+						<div class="col-4" style="margin-top: 1rem;">
+							<span><b>똑똑한 부동산 투자 방법, 내 집 마련으로<br>안정적인 삶까지 한 번에!</b></span>
+						</div>
+						<div class="col-4" style="margin-top: 0.5rem;">
+							<div class="row">
+								<div class="col-4"><span class="progressRate"><small>50% 수강중</small></span></div>
+								<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
+								  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4" style="margin-top: 0.5rem;">
+							<div class="row">
+								<div class="col-4"><span class="progressRate"><small>75% 수강중</small></span></div>
+								<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
+								  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4" style="margin-top: 0.5rem;">
+							<div class="row">
+								<div class="col-4"><span class="progressRate"><small>25% 수강중</small></span></div>
+								<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
+								  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 20일 남음</span></div>
+						<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 50일 남음</span></div>
+						<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 10일 남음</span></div>
+					</div>
+					<div style="margin-top: 2rem;"><h5><b>내가 본 상품</b></h5></div>
+					<div class="row">
+						<div class="col-4">
+							<div class="card" style="width: 17rem;">
+							  <img src="../image/p2.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <p class="card-text"><b>토익독학길잡이</b><br>[💣24시간] 국내 1위 토익 유튜버의 '해석을 위한 문법'<br><br></p>
+							    <hr>
+							    <span class="discount">46%</span>
+							    <span class="price">월 24,200원</span>
+							    <span class="month">(5개월)</span>
+							  </div>
+							</div>
+						</div>	
+						<div class="col-4">
+							<div class="card" style="width: 17rem;">
+							  <img src="../image/p3.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <p class="card-text"><b>아로스</b><br>[💣24시간] [2022년 New 노하우] 하루 1시간 월 100만원, 애드센스 블로그로 만드는 법!</p>
+							    <hr>
+							    <span class="discount">33%</span>
+							    <span class="price">월 45,800원</span>
+							    <span class="month">(5개월)</span>
+							  </div>
+							</div>
+						</div>
+					</div>
 					<div>
-						<a type="button" class="btn btn-light"href="mypageMain.html">마이 페이지</a>
-						<a type="button" class="btn btn-light"href="mypageOrderList.html" style="color: gray">주문 목록</a>
-						<a type="button" class="btn btn-light"href="mypageOrderView.html"style="color: gray">주문 상세</a>
+						<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 수강권 코드 등록하기</b></a>
+					</div>	
+				  </div>
+				 
+				<!-- 두 번째 탭 -->	
+				  
+				  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+				  	<div class="row justify-content-between" style="margin-top: 2rem;">
+					<div class="col-2"><span>2022.07.22</span></div>
+					<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
 					</div>
-				</div>
-				<div style="margin-top: 2rem;"><h5><b>내 스토어 상품</b></h5></div>
-				<div class="row">
-					<div class="col-4">
-						<img src="https://cdn.class101.net/images/dfd02760-c3e2-4ea7-8eb1-a93cf10fa746/375xauto.webp" width="260" height="200">
-					</div>
-					<div class="col-4">
-						<img src="https://cdn.class101.net/images/cb2119ec-b977-49e3-a1a4-b674081ed809/750xauto.webp" width="260" height="200">
-					</div>
-					<div class="col-4">
-						<img src="https://cdn.class101.net/images/b50a51a8-b06d-4bb6-97a1-1371a179573a/750xauto.webp" width="260" height="200">
-					</div>
-					<div class="col-4" style="margin-top: 1rem;">
-						<span><b>인스타그램으로 세상에 나의 가치를 알려<br>보자. 인스타그램 퍼스널 브랜딩</b></span>
-					</div>
-					<div class="col-4" style="margin-top: 1rem;">
-						<span><b>초보 그림러가 인기 작가가 되는 법, 콕스<br>의 독학비법서</b></span>
-					</div>
-					<div class="col-4" style="margin-top: 1rem;">
-						<span><b>똑똑한 부동산 투자 방법, 내 집 마련으로<br>안정적인 삶까지 한 번에!</b></span>
-					</div>
-					<div class="col-4" style="margin-top: 0.5rem;">
-						<div class="row">
-							<div class="col-4"><span class="progressRate"><small>50% 수강중</small></span></div>
-							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
-							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
+					<hr>
+					<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
+					<div class="row">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/27b658a7-53e1-47ca-a1bd-6c9bb5f7f93b/2048xauto.webp" width="200px" height="140px">
 						</div>
-					</div>
-					<div class="col-4" style="margin-top: 0.5rem;">
-						<div class="row">
-							<div class="col-4"><span class="progressRate"><small>75% 수강중</small></span></div>
-							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
-							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4" style="margin-top: 0.5rem;">
-						<div class="row">
-							<div class="col-4"><span class="progressRate"><small>25% 수강중</small></span></div>
-							<div class="col-8 progress" style="margin-top: 0.7rem; width: 170px; height: 3px; padding-left: 0px; padding-right: 0px;">
-							  <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 20일 남음</span></div>
-					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 50일 남음</span></div>
-					<div class="col-4"><span style="color: gray; margin-top: 0.5rem;">수강기간 10일 남음</span></div>
-				</div>
-				<div style="margin-top: 2rem;"><h5><b>내가 본 상품</b></h5></div>
-				<div class="row">
-					<div class="col-4">
-						<div class="card" style="width: 17rem;">
-						  <img src="../image/p2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <p class="card-text"><b>토익독학길잡이</b><br>[💣24시간] 국내 1위 토익 유튜버의 '해석을 위한 문법'<br><br></p>
-						    <hr>
-						    <span class="discount">46%</span>
-						    <span class="price">월 24,200원</span>
-						    <span class="month">(5개월)</span>
-						  </div>
+						<div class="col-9">
+							<div><h5>[유랑] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아...</h5></div>
+							<div><span>20주 수강권</span></div>
 						</div>
 					</div>	
-					<div class="col-4">
-						<div class="card" style="width: 17rem;">
-						  <img src="../image/p3.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <p class="card-text"><b>아로스</b><br>[💣24시간] [2022년 New 노하우] 하루 1시간 월 100만원, 애드센스 블로그로 만드는 법!</p>
-						    <hr>
-						    <span class="discount">33%</span>
-						    <span class="price">월 45,800원</span>
-						    <span class="month">(5개월)</span>
-						  </div>
+					<div>
+						<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
+					</div>
+					<hr>
+					<div style="margin-top: 1rem; color: #A9A9A9;"><h5><i class="fa-solid fa-truck"></i> 배송이 완료되었습니다.</h5></div>
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/ff11d001-ede0-4559-8231-51ed204106b7/2048xauto.webp" width="148px" height="148px">
+						</div>
+						<div class="col-9">
+							<div style="margin-top: 1rem;"><h6>iPad (구버전)</h6></div>
+							<div style="color: #A9A9A9;"><span>옵션: PRO 11형 (3세대)/ 128GB/ 스페이스그레이/ Wi-Fi</span></div>
+							<div style="margin-top: 3rem; color: #A9A9A9;"><span>수량 1개</span></div>
 						</div>
 					</div>
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/89a3f6c0-9ccb-4234-83c3-81b8162bc638/2048xauto.webp" width="148px" height="148px">
+						</div>
+						<div class="col-9">
+							<div style="margin-top: 1rem;"><h6>애플펜슬</h6></div>
+							<div style="color: #A9A9A9;"><span>옵션: 애플펜슬 2세대</span></div>
+							<div style="margin-top: 3rem; color: #A9A9A9;"><span>수량 1개</span></div>
+						</div>
+					</div>
+					<div class="row justify-content-between" style="margin-top: 2rem;">
+						<div class="col-2"><span>2022.05.17</span></div>
+						<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
+					</div>
+					<hr>
+					<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
+					<div class="row">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/dfd02760-c3e2-4ea7-8eb1-a93cf10fa746/375xauto.webp" width="200px" height="140px">
+						</div>
+						<div class="col-9">
+							<div><h5>[드로우 앤드류] 인스타그램으로 세상에 나의 가치를 알려보자. 인스타...</h5></div>
+							<div><span>20주 수강권</span></div>
+						</div>
+					</div>	
+					<div>
+						<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
+					</div>
+					<div class="row justify-content-between" style="margin-top: 2rem;">
+						<div class="col-2"><span>2022.01.01</span></div>
+						<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
+					</div>
+					<hr>
+					<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
+					<div class="row">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/cb2119ec-b977-49e3-a1a4-b674081ed809/750xauto.webp" width="200px" height="140px">
+						</div>
+						<div class="col-9">
+							<div><h5>[콕스] 초보 그림러가 인기 작가가 되는 법, 콕스의 독학비법서</h5></div>
+							<div><span>1년 수강권</span></div>
+						</div>
+					</div>	
+					<div>
+						<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
+					</div>
+				  </div>
+				  
+				  <!-- 세 번째 -->
+				  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+				  	<div style="margin-top: 3rem;"><h4><b>2022.07.22 주문 상세 내역</b></h4></div>
+					<hr class="hrstyle">
+					<div style="margin-top: 2rem;"><h4><b>배송 완료</b></h4></div>
+					<div style="margin-top: 2rem;"><span>결제수단</span></div>
+					<hr>
+					<div id="gray">
+						<div class="row" style="margin-top: 1rem;">
+							<div class="col-10"><span>총 상품금액</span></div>
+							<div class="col-2 text-end"><span>1,437,400원</span></div>
+						</div>
+						<div class="row" style="margin-top: 1rem;">
+							<div class="col-10"><span>상품 할인 금액</span></div>
+							<div class="col-2 text-end"><span> - 63,400원</span></div>
+						</div>
+						<div class="row" style="margin-top: 1rem;">
+							<div class="col-10"><span>쿠폰 할인 금액</span></div>
+							<div class="col-2 text-end"><span> - 40,000원</span></div>
+						</div>
+						<div class="row" style="margin-top: 1rem;">
+							<div class="col-10"><span>배송비</span></div>
+							<div class="col-2 text-end"><span> 0원</span></div>
+						</div>
+					</div>
+					<hr style="margin-top: 1rem;">
+					<div class="row justify-content-between" style="margin-top: 1rem;">
+						<div class="col-2" id="finalPrice"><h5><b>총 결제 금액</b></h5></div>
+						<div class="col-2 text-end" id="finalPrice"><span><h5><b>1,334,000원</b></h5></span></div>
+					</div>
+					<div class="row justify-content-between">
+						<div class="col-3"><span>카카오 페이 결제 금액</span></div>
+						<div class="col-2 text-end" id="finalPrice"><span>1,334,000원</span></div>
+					</div>
+					<hr class="hrstyle">
+					<div style="margin-top: 2rem;"><h4><b>구매 물품</b></h4></div>	
+					<div class="row">
+						<div class="col-3">
+							<img src="https://cdn.class101.net/images/27b658a7-53e1-47ca-a1bd-6c9bb5f7f93b/2048xauto.webp" width="200px" height="140px">
+						</div>
+						<div class="col-9">
+							<div><h5>[유랑] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아...</h5></div>
+							<div><span>20주 수강권</span></div>
+						</div>
+					</div>	
+					<div>
+						<a type="button" class="btn btn-light" id="button1"><b>환불하기</b></a>
+					</div>
+				  </div>
 				</div>
-				<div>
-					<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 수강권 코드 등록하기</b></a>
-				</div>	
 			</div>	
-			</div>
 		</div>
+	</div>
 	
 	
 	<!-- 끝 -->
