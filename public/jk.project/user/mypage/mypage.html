@@ -220,23 +220,25 @@
 			<!-- 오른쪽 -->
 			<div class="col-8">
 				
-				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
 				  <li class="nav-item" role="presentation">
-				    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">마이페이지</button>
+				    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">마이페이지</button>
 				  </li>
+				  &emsp;
 				  <li class="nav-item" role="presentation">
-				    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">주문 목록</button>
+				    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">주문 목록</button>
 				  </li>
+				  &emsp;
 				  <li class="nav-item" role="presentation">
-				    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">주문 상세</button>
+				    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">주문 상세</button>
 				  </li>
 				</ul>
-				<div class="tab-content" id="pills-tabContent">
+				<div class="tab-content" id="myTabContent">
 				  
 				  
 				  <!-- 첫 번째 탭 -->	
 				  
-				  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+				  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 				  	<div style="margin-top: 2rem;"><h5><b>내 스토어 상품</b></h5></div>
 					<div class="row">
 						<div class="col-4">
@@ -319,7 +321,7 @@
 				 
 				<!-- 두 번째 탭 -->	
 				  
-				  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+				  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 				  	<div class="row justify-content-between" style="margin-top: 2rem;">
 					<div class="col-2"><span>2022.07.22</span></div>
 					<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
@@ -399,7 +401,7 @@
 				  </div>
 				  
 				  <!-- 세 번째 -->
-				  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+				  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 				  	<div style="margin-top: 3rem;"><h4><b>2022.07.22 주문 상세 내역</b></h4></div>
 					<hr class="hrstyle">
 					<div style="margin-top: 2rem;"><h4><b>배송 완료</b></h4></div>
