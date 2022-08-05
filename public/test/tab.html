@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RegForm</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<style type="text/css">
+		
+
+
+        .main {
+            min-width: 320px;
+            max-width: 800px;
+            padding: 50px;
+            margin: 0 auto;
+            background: #ffffff;}
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+
+        /*라디오버튼 숨김*/
+          input {
+              display: none;}
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #bbb;
+            border: 1px solid transparent;}
+
+        label:hover {
+            color: #2e9cdf;
+            cursor: pointer;}
+
+        /*input 클릭시, label 스타일*/
+        input:checked + label {
+              color: #555;
+              border: 1px solid #ddd;
+              border-top: 2px solid #2e9cdf;
+              border-bottom: 1px solid #ffffff;}
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3 {
+            display: block;}
+    
+	</style>
+
+</head>
+<body>
+
+<!-- start -->
+	
+
+	<div class="main">
+	    <input id="tab1" type="radio" name="tabs" checked=""> 
+	    <label for="tab1">마이페이지</label>
+	
+	    <input id="tab2" type="radio" name="tabs">
+	    <label for="tab2">주문 목록</label>
+	
+	    <input id="tab3" type="radio" name="tabs">
+	    <label for="tab3">주문 상세</label>
+	
+		<!-- 마이페이지 -->
+	    <section id="content1">
+	        <p>tab menu1의 내용</p>
+	    </section>
+	
+		<!-- 주문 목록 -->
+	    <section id="content2">
+	        <p>tab menu2의 내용</p>
+	    </section>
+		
+		<!-- 주문 상세 -->
+	    <section id="content3">
+	        <p>tab menu3의 내용</p>
+	    </section>
+	
+	</div>
+	
+	
+<!-- end	 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+</body>
+</html>
