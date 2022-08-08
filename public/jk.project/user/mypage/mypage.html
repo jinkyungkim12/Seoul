@@ -114,6 +114,21 @@
 			width: 20rem;
 			background-color: #F5F5F5;
 		} 
+		.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		    color: black;
+		    background-color: var(--bs-nav-tabs-link-active-bg);
+		    border-color: var(--bs-nav-tabs-link-active-border-color);
+		}
+		
+		.nav-link {
+		    display: block;
+		    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+		    font-size: var(--bs-nav-link-font-size);
+		    font-weight: var(--bs-nav-link-font-weight);
+		    color: gray;
+		    text-decoration: none;
+		    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+		}
 	</style>
 
 </head>
@@ -182,7 +197,6 @@
 		<div style="margin-top: 3rem;"><h3><b><a type="button" href="#" class="nav-link">김진경</a></b></h3></div>
 		<div><a type="button" href="#" class="nav-link"><h6>example@naver.com</h6></a></div>
 	</div>
-	
 	<!-- 중간 -->
 	<div class="container" id="containerFont2">
 		<div class="row">
@@ -191,8 +205,8 @@
 				<div style="margin-top: 3rem;"><h5><b>내등급</b></h5></div>
 				<div class="shadow p-3 mb-5 rounded" style="margin-top: 1rem;" id="leveltap">
 					<div class="row justify-content-between">
-						<div class="col-5"><h5><b><a type=button class=nav-link href="#">Lv. Amateur</a></b></h5></div>
-						<div class="col-4 text-end"><span><a type=button class=nav-link href="#">혜택보기</a></soan></div>
+						<div class="col-5"><h5><b><a type=button class="nav-link text-white" href="#">Lv. Amateur</a></b></h5></div>
+						<div class="col-4 text-end"><span><a type=button class="nav-link text-white" href="#">혜택보기</a></soan></div>
 					</div>
 					<hr class="hrStyle">
 					<div><b>10,000P</b>&emsp;<span>추가 적립시 다음 달 &nbsp; Lv. Professtional</span></div>
