@@ -785,6 +785,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="col text-end">
+		<a id="back-to-top" href="#" class="btn btn-outline-dark back-to-top-css rounded-circle" role="button" title="Move Top" data-toggle="tooltip" data-placement="left">
+			<span class="glyphicon glyphicon-chevron-up"><i class="fa-solid fa-angles-up"></i><br>TOP</span>
+		</a>
+	</div>
 	<br>
 	<br>	
 
@@ -798,6 +803,28 @@
 	myModal.addEventListener('shown.bs.modal', () => {
 	  myInput.focus()
 	})
+	</script>
+	<script type="text/javascript">
+	 $(document).ready(function () {
+	        $(window).scroll(function () {
+	            if ($(this).scrollTop() > 50) {
+	                $('#back-to-top').fadeIn();
+	            } else {
+	                $('#back-to-top').fadeOut();
+	            }
+	        });
+	        // scroll body to 0px on click
+	        $('#back-to-top').click(function () {
+	            $('#back-to-top').tooltip('hide');
+	            $('body,html').animate({
+	                scrollTop: 0
+	            }, 800);
+	            return false;
+	        });
+
+	        $('#back-to-top').tooltip('show');
+
+	    });
 	</script> 
 </body>
 </html>
