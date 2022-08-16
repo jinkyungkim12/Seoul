@@ -42,7 +42,7 @@
 	<!-- tab -->
 		
 	<div><img src="./image/back2.jpg"></div>
-	<div class="container p-4">
+	<div class="container-fluid p-4" style="width: 80%">
 	<ul class="nav nav-tabs">
 	  <li class="nav-item">
 	    <a class="nav-link active text-white" style="background-color: #F87320" aria-current="page" href="#">회원관리</a>
@@ -60,7 +60,7 @@
 	
 	<!-- 검색조건 -->
 	
-	<div class="container">
+	<div class="container-fluid" style="width: 80%">
 		<div class="row justify-content-end">
 			<div class="col-2">
 				<select class="form-select col-2" aria-label="Default select example">
@@ -69,23 +69,21 @@
 				  <option value="2">N</option>
 				</select>
 			</div>
-				<div class="col-2">
+			<div class="col-2">
 				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>작성날짜</option>
-				  <option value="1">작성날짜</option>
-				  <option value="2">수정일</option>
+				  <option selected>선택</option>
 				  <option value="2">생년월일</option>
 				</select>
 			</div>
-				<div class="col-2">
+			<div class="col-2">
 				<input type="date" class="form-control" value="2020-01-01" aria-label="Recipient's username with two button addons">
 			</div>
-				<div class="col-2">
+			<div class="col-2">
 				<input type="date" class="form-control" value="2022-07-01" aria-label="Recipient's username with two button addons">
 			</div>
 		</div>
 	</div>
-	<div class="container p-4">
+	<div class="container-fluid p-4" style="width: 80%">
 		<div class="row justify-content-end">
 			<div class="col-2">
 				<select class="form-select" aria-label="Default select example">
@@ -112,187 +110,220 @@
 	
 	<!-- member table -->
 	
-	<div class="container p-4 text-center">
+	<div class="container-fluid text-center" style="width: 80%">
 		<table class="table table-hover" id="minus">
-		  <thead>
-		    <tr class="table-dark text-white">
-		      <th scope="col" >
-		      	<input type="checkbox" name="check" onclick="selectAll(this)">
-		      </th>
-		      <th scope="col" >NO</th>
-		      <th scope="col">이름</th>
-		      <th scope="col">아이디</th>
-		      <th scope="col">구분</th>
-		      <th scope="col">성별</th>
-		      <th scope="col">생년월일</th>
-		      <th scope="col">연락처</th>
-		      <th scope="col">연락처2</th>
-		      <th scope="col">메일주소</th>
-		      <th scope="col">삭제여부</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		  	<tr>
-		    	<td>
-		      		<input type="checkbox" name="check">
-		      	</td>
-		        <th scope="row">1</th>
-		        <td><a href="dmin_ViewForm_jk.html">김진경</a></td>
-				<td>yeriel</td>
-				<td>수강생</td>
-				<td>여성</td>
-				<td>1993.05.07</td>
-				<td>010-1234-1234</td>
-				<td>010-1234-1235</td>
-				<td>example@naver.com</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		      <td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		      <th scope="row">2</th>
-		      <td><a href="dmin_ViewForm_student.html">차은우</a></td>
-		      <td>chacha</td>
-			  <td>수강생</td>
-			  <td>남성</td>
-			  <td>1997.03.30</td>
-			  <td>010-1234-1234</td>
-			  <td>chacha@naver.com</td>
-			  <td>2022.07.01. 09:04:00</td>
-			  <td>N</td>
-		    </tr>
-		    <tr>
-		    	<td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		        <th scope="row">3</th>
-				<td><a href="#">송강</a></td>
-				<td>kangsong</td>
-				<td>크리에이터</td>
-				<td>남성</td>
-				<td>1994.04.23</td>
-				<td>010-1234-1234</td>
-				<td>songkang@naver.com</td>
-				<td>2022.07.01. 09:05:00</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		      <td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		        <th scope="row">4</th>
-				<td><a href="dmin_ViewForm_creator.html">김연아</a></td>
-				<td>yunakk</td>
-				<td>크리에이터</td>
-				<td>여성</td>
-				<td>1990.09.05</td>
-				<td>010-1234-1234</td>
-				<td>yunakim@naver.com</td>
-				<td>2022.07.03. 07:05:00</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		      <td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		      <th scope="row">5</th>
-		        <td><a href="#">배수지</a></td>
-				<td>suzybae</td>
-				<td>수강생</td>
-				<td>여성</td>
-				<td>1994.10.10</td>
-				<td>010-1234-1234</td>
-				<td>suzybae@naver.com</td>
-				<td>2022.07.01. 19:50:00</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		      <td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		        <th scope="row">6</th>
-		        <td><a href="#">장우영</a></td>
-				<td>ywyw</td>
-				<td>크리에이터</td>
-				<td>남성</td>
-				<td>1989.04.30</td>
-				<td>010-1234-1234</td>
-				<td>ywywjj@naver.com</td>
-				<td>2022.01.05 07:00</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		      <td>
-		      	<input type="checkbox" name="check">
-		      </td>
-		      <th scope="row">7</th>
-		      <td><a href="#">김우빈</a></td>
-		      <td>ubini</td>
-			  <td>수강생</td>
-			  <td>남성</td>
-			  <td>1989.07.16</td>
-		      <td>010-1234-1234</td>
-		      <td>ubini@naver.com</td>
-		      <td>2022.06.29. 12:15:00</td>
-		      <td>N</td>
-		    </tr>
-		    <tr>
-		        <td>
-		      	 <input type="checkbox" name="check">
-		        </td>
-		        <th scope="row">8</th>
-		        <td><a href="#">이종석</a></td>
-				<td>Leejs</td>
-				<td>크리에이터</td>
-				<td>남성</td>
-				<td>1994.04.04</td>
-				<td>010-1234-1234</td>
-				<td>Leejs@naver.com</td>
-				<td>2019.01.05 10:35</td>
-				<td>Y</td>
-		    </tr>
-		    <tr>
-		    	<td>
-		      		<input type="checkbox" name="check">
-		        </td>
-		        <th scope="row">9</th>
-		        <td><a href="#">박은빈</a></td>
-				<td>eunbini</td>
-				<td>수강생</td>
-				<td>남성</td>
-				<td>1992.09.04</td>
-				<td>010-1234-1234</td>
-				<td>eunbini2@naver.com</td>
-				<td>2022.07.10 19:32</td>
-				<td>N</td>
-		    </tr>
-		    <tr>
-		    	<td>
-		      		<input type="checkbox" name="check">
-		        </td>
-		        <th scope="row">10</th>
-		        <td><a href="#">박보검</a></td>
-				<td>bogum</td>
-				<td>수강생</td>
-				<td>남성</td>
-				<td>1993.06.16</td>
-				<td>010-1234-1234</td>
-				<td>bogum@naver.com</td>
-				<td>2022.07.02. 09:24:00</td>
-				<td>N</td>
-		    </tr>
-		  </tbody>
+			<thead>
+				<tr class="table-dark text-white">
+					<th scope="col" >
+						<input type="checkbox" name="check" onclick="selectAll(this)">
+					</th>
+					<th scope="col" >NO</th>
+					<th scope="col">이름</th>
+					<th scope="col">아이디</th>
+					<th scope="col">구분</th>
+					<th scope="col">성별</th>
+					<th scope="col">생년월일</th>
+					<th scope="col">연락처</th>
+					<th scope="col">연락처2</th>
+					<th scope="col">메일주소</th>
+					<th scope="col">모바일동의</th>
+					<th scope="col">이메일동의</th>
+					<th scope="col">개인정보동의</th>
+					<th scope="col">삭제여부</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">1</th>
+					<td><a href="dmin_ViewForm_jk.html">김진경</a></td>
+					<td>yeriel</td>
+					<td>수강생</td>
+					<td>여성</td>
+					<td>1993.05.07</td>
+					<td>010-1234-1234</td>
+					<td>010-1234-1235</td>
+					<td>example@naver.com</td>
+					<td>Y</td>
+					<td>N</td>
+					<td>3년</td>
+					<td>N</td>
+				</tr>
+		   		<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">2</th>
+					<td><a href="dmin_ViewForm_student.html">차은우</a></td>
+					<td>chacha</td>
+					<td>수강생</td>
+					<td>남성</td>
+					<td>1997.03.30</td>
+					<td>010-1997-0330</td>
+					<td>010-1997-0331</td>
+					<td>chaEuWoo@naver.com</td>
+					<td>Y</td>
+					<td>N</td>
+					<td>1년</td>
+					<td>N</td>
+			    </tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">3</th>
+					<td><a href="#">송강</a></td>
+					<td>kangsong</td>
+					<td>크리에이터</td>
+					<td>남성</td>
+					<td>1994.04.23</td>
+					<td>010-1994-0423</td>
+					<td>010-1994-0424</td>
+					<td>songKang@naver.com</td>
+					<td>N</td>
+					<td>N</td>
+					<td>1년</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">4</th>
+					<td><a href="dmin_ViewForm_creator.html">김연아</a></td>
+					<td>yunakk</td>
+					<td>크리에이터</td>
+					<td>여성</td>
+					<td>1990.09.05</td>
+					<td>010-1990-0905</td>
+					<td>010-1990-0906</td>
+					<td>yunaKim@naver.com</td>
+					<td>Y</td>
+					<td>N</td>
+					<td>3년</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">5</th>
+					<td><a href="#">배수지</a></td>
+					<td>suzybae</td>
+					<td>수강생</td>
+					<td>여성</td>
+					<td>1994.10.10</td>
+					<td>010-1994-1010</td>
+					<td>010-1994-1011</td>
+					<td>suzyb@naver.com</td>
+					<td>Y</td>
+					<td>Y</td>
+					<td>10년</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">6</th>
+					<td><a href="#">장우영</a></td>
+					<td>ywyw</td>
+					<td>크리에이터</td>
+					<td>남성</td>
+					<td>1989.04.30</td>
+					<td>010-1989-0430</td>
+					<td>010-1989-0431</td>
+					<td>jangwooyoung@naver.com</td>
+					<td>N</td>
+					<td>N</td>
+					<td>3년</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">7</th>
+					<td><a href="#">김우빈</a></td>
+					<td>ubini</td>
+					<td>수강생</td>
+					<td>남성</td>
+					<td>1989.07.16</td>
+					<td>010-1989-0716</td>
+					<td>010-1989-0717</td>
+					<td>Ubbbb1n@naver.com</td>
+					<td>Y</td>
+					<td>Y</td>
+					<td>평생회원</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">8</th>
+					<td><a href="#">이종석</a></td>
+					<td>Leejs</td>
+					<td>크리에이터</td>
+					<td>남성</td>
+					<td>1989.04.26</td>
+					<td>010-1989-0426</td>
+					<td>010-1989-0427</td>
+					<td>handsome1234@naver.com</td>
+					<td>Y</td>
+					<td>N</td>
+					<td>1년</td>
+					<td>Y</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">9</th>
+					<td><a href="#">박은빈</a></td>
+					<td>eunbini</td>
+					<td>수강생</td>
+					<td>남성</td>
+					<td>1992.08.04</td>
+					<td>010-1992-0804</td>
+					<td>010-1992-0805</td>
+					<td>choco1231@naver.com</td>
+					<td>Y</td>
+					<td>Y</td>
+					<td>평생회원</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">10</th>
+					<td><a href="#">박보검</a></td>
+					<td>bogum</td>
+					<td>수강생</td>
+					<td>남성</td>
+					<td>1993.06.16</td>
+					<td>010-1993-0616</td>
+					<td>010-1993-0617</td>
+					<td>chocobananalover@naver.com</td>
+					<td>Y</td>
+					<td>Y</td>
+					<td>평생회원</td>
+					<td>N</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 	
-	<div class="container">
+	<div class="container-fluid" style="width:80%">
 		<div class="row justify-content-between">	
 	   		<div class="col-10">
 	     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
 	     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
 	    	</div>
-	    	<div class="col-2">
+	    	<div class="col-2 text-end">
 	     		<a type="button" class="btn btn-dark" href="dmin_RegForm_student.html" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
 				<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
 	    	</div>
