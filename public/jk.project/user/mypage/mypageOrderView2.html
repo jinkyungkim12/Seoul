@@ -54,10 +54,11 @@
 			background-color: #00B031;
 			color: white;
 		}
-		.hrStyle{
-			background: #ffffff;
-			height: 2px;
-			margin-top: 3rem;
+		.hrstyle{
+			border: 0;
+		    height: 17px;
+		    background: #8F8F8F;
+		    margin-top: 2rem;
 		}
 		.progressRate{
 			color: red;
@@ -67,6 +68,9 @@
 			font-size: 20px;
 			margin-top: 2rem;
 			background-color: #F5F5F5;
+		}
+		#gray{
+			color: #8F8F8F;
 		}
 		.eventTitle{
 			color: black;
@@ -220,16 +224,44 @@
 				<div class="row">
 					<div>
 						<a type="button" class="btn btn-light"href="mypageMain.html" style="color: gray">마이 페이지</a>
-						<a type="button" class="btn btn-light"href="mypageOrderList.html">주문 목록</a>
-						<a type="button" class="btn btn-light"href="mypageOrderView.html" style="color: gray">주문 상세</a>
+						<a type="button" class="btn btn-light"href="mypageOrderList.html" style="color: gray">주문 목록</a>
+						<a type="button" class="btn btn-light"href="mypageOrderView.html">주문 상세</a>
 					</div>
 				</div>
-				<div class="row justify-content-between" style="margin-top: 2rem;">
-					<div class="col-2"><span>2022.07.22</span></div>
-					<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
-				</div>
+				<div style="margin-top: 3rem;"><h4><b>2022.07.22 주문 상세 내역</b></h4></div>
+				<hr class="hrstyle">
+				<div style="margin-top: 2rem;"><h4><b>배송 완료</b></h4></div>
+				<div style="margin-top: 2rem;"><span>결제수단</span></div>
 				<hr>
-				<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
+				<div id="gray">
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-10"><span>총 상품금액</span></div>
+						<div class="col-2 text-end"><span>1,437,400원</span></div>
+					</div>
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-10"><span>상품 할인 금액</span></div>
+						<div class="col-2 text-end"><span> - 63,400원</span></div>
+					</div>
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-10"><span>쿠폰 할인 금액</span></div>
+						<div class="col-2 text-end"><span> - 40,000원</span></div>
+					</div>
+					<div class="row" style="margin-top: 1rem;">
+						<div class="col-10"><span>배송비</span></div>
+						<div class="col-2 text-end"><span> 0원</span></div>
+					</div>
+				</div>
+				<hr style="margin-top: 1rem;">
+				<div class="row justify-content-between" style="margin-top: 1rem;">
+					<div class="col-2" id="finalPrice"><h5><b>총 결제 금액</b></h5></div>
+					<div class="col-2 text-end" id="finalPrice"><span><h5><b>1,334,000원</b></h5></span></div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-3"><span>카카오 페이 결제 금액</span></div>
+					<div class="col-2 text-end" id="finalPrice"><span>1,334,000원</span></div>
+				</div>
+				<hr class="hrstyle">
+				<div style="margin-top: 2rem;"><h4><b>구매 물품</b></h4></div>	
 				<div class="row">
 					<div class="col-3">
 						<img src="https://cdn.class101.net/images/27b658a7-53e1-47ca-a1bd-6c9bb5f7f93b/2048xauto.webp" width="200px" height="140px">
@@ -240,65 +272,7 @@
 					</div>
 				</div>	
 				<div>
-					<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
-				</div>
-				<hr>
-				<div style="margin-top: 1rem; color: #A9A9A9;"><h5><i class="fa-solid fa-truck"></i> 배송이 완료되었습니다.</h5></div>
-				<div class="row" style="margin-top: 1rem;">
-					<div class="col-3">
-						<img src="https://cdn.class101.net/images/ff11d001-ede0-4559-8231-51ed204106b7/2048xauto.webp" width="148px" height="148px">
-					</div>
-					<div class="col-9">
-						<div style="margin-top: 1rem;"><h6>iPad (구버전)</h6></div>
-						<div style="color: #A9A9A9;"><span>옵션: PRO 11형 (3세대)/ 128GB/ 스페이스그레이/ Wi-Fi</span></div>
-						<div style="margin-top: 3rem; color: #A9A9A9;"><span>수량 1개</span></div>
-					</div>
-				</div>
-				<div class="row" style="margin-top: 1rem;">
-					<div class="col-3">
-						<img src="https://cdn.class101.net/images/89a3f6c0-9ccb-4234-83c3-81b8162bc638/2048xauto.webp" width="148px" height="148px">
-					</div>
-					<div class="col-9">
-						<div style="margin-top: 1rem;"><h6>애플펜슬</h6></div>
-						<div style="color: #A9A9A9;"><span>옵션: 애플펜슬 2세대</span></div>
-						<div style="margin-top: 3rem; color: #A9A9A9;"><span>수량 1개</span></div>
-					</div>
-				</div>
-				<div class="row justify-content-between" style="margin-top: 2rem;">
-					<div class="col-2"><span>2022.05.17</span></div>
-					<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
-				</div>
-				<hr>
-				<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
-				<div class="row">
-					<div class="col-3">
-						<img src="https://cdn.class101.net/images/dfd02760-c3e2-4ea7-8eb1-a93cf10fa746/375xauto.webp" width="200px" height="140px">
-					</div>
-					<div class="col-9">
-						<div><h5>[드로우 앤드류] 인스타그램으로 세상에 나의 가치를 알려보자. 인스타...</h5></div>
-						<div><span>20주 수강권</span></div>
-					</div>
-				</div>	
-				<div>
-					<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
-				</div>
-				<div class="row justify-content-between" style="margin-top: 2rem;">
-					<div class="col-2"><span>2022.01.01</span></div>
-					<div class="col-2 text-end"><span><a class="nav-link" type="button" href="mypageOrderView.html" style="color: #FF5600">주문 상세 보기</a></span></div>
-				</div>
-				<hr>
-				<div class="row" style="margin-top: 2rem;"><h5><b>배송 완료</b></h5></div>
-				<div class="row">
-					<div class="col-3">
-						<img src="https://cdn.class101.net/images/cb2119ec-b977-49e3-a1a4-b674081ed809/750xauto.webp" width="200px" height="140px">
-					</div>
-					<div class="col-9">
-						<div><h5>[콕스] 초보 그림러가 인기 작가가 되는 법, 콕스의 독학비법서</h5></div>
-						<div><span>1년 수강권</span></div>
-					</div>
-				</div>	
-				<div>
-					<a type="button" class="btn btn-light" id="button1"><b><i class="fa-solid fa-ticket"></i> 지금 바로 수강하기</b></a>
+					<a type="button" class="btn btn-light" id="button1"><b>환불하기</b></a>
 				</div>
 			</div>
 		</div>
