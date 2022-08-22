@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>memberList</title>
+	<title>class101</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
 		.aaa:link {
@@ -81,7 +81,7 @@
 	<!-- 검색조건 -->
 	
 	<div><img src="./image/back2.jpg"></div>
-	<div class="container-fluid" style="width: 80%; margin-top: 2rem;">
+	<div class="container-fluid" style="width: 90%; margin-top: 2rem;">
 		<div class="text-center ccc"><h1><b>클래스관리</b></h1></div>
 		<div class="row justify-content-end" style="margin-top: 2rem;">
 			<div class="col-2">
@@ -106,7 +106,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid p-4" style="width: 80%">
+	<div class="container-fluid p-4" style="width: 90%">
 		<div class="row justify-content-end">
 			<div class="col-2">
 				<select class="form-select" aria-label="Default select example">
@@ -129,7 +129,7 @@
 	
 	<!-- member table -->
 	
-	<div class="container-fluid text-center" style="width: 80%">
+	<div class="container-fluid text-center" style="width: 90%">
 		<table class="table table-hover" id="minus">
 			<thead>
 				<tr class="table-dark text-white">
@@ -138,17 +138,18 @@
 					</th>
 					<th scope="col" >NO</th>
 					<th scope="col">카테고리</th>
+					<th scope="col">구분</th>
 					<th scope="col">강의제목</th>
-					<th scope="col">크리에이터</th>
-					<th scope="col">상품금액</th>
 					<th scope="col">할인률</th>
-					<th scope="col">ㅇㄴㅇㅁㄴㅇ</th>
-					<th scope="col">총 결제금액</th>
-					<th scope="col">모바일동의</th>
-					<th scope="col">이메일동의</th>
-					<th scope="col">개인정보동의</th>
+					<th scope="col">정가</th>
+					<th scope="col">할부</th>
+					<th scope="col">클래스 분량</th>
+					<th scope="col">수강가능</th>
+					<th scope="col">자막포함</th>
+					<th scope="col">키트포함</th>
 					<th scope="col">삭제여부</th>
-					<th scope="col">회원등록일</th>
+					<th scope="col">등록일</th>
+					<th scope="col">수정일</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -157,60 +158,63 @@
 						<input type="checkbox" name="check">
 					</td>
 					<th scope="row">1</th>
-					<td><a class="aaa" href="dmin_ViewForm_jk.html">김진경</a></td>
-					<td>yeriel</td>
-					<td>수강생</td>
-					<td>여성</td>
-					<td>1993.05.07</td>
-					<td>010-1234-1234</td>
-					<td>example@naver.com</td>
+					<td><a class="aaa" href="#">유랑</a></td>
+					<td>오늘의 특가! TIME DEAL</td>
+					<td>무명 이모티콘 작가..</td>
+					<td>40%</td>
+					<td>300,000원</td>
+					<td>5개월</td>
+					<td>12개 챕터, 45개 세부강의</td>
 					<td>Y</td>
-					<td>N</td>
-					<td>3년</td>
+					<td>Y</td>
+					<td>Y</td>
 					<td>N</td>
 					<td>2020.12.12 14:00:05</td>
+					<td>2020.12.12 14:00:05</td>
 				</tr>
-		   		<tr>
+				<tr>
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<th scope="row">2</th>
-					<td><a class="aaa" href="dmin_ViewForm_student.html">차은우</a></td>
-					<td>chacha</td>
-					<td>수강생</td>
-					<td>남성</td>
-					<td>1997.03.30</td>
-					<td>010-1997-0330</td>
-					<td>chaEuWoo@naver.com</td>
+					<td><a class="aaa" href="#">토익독학길잡이</a></td>
+					<td>오늘의 특가! TIME DEAL</td>
+					<td>국내 1위 토익..</td>
+					<td>20%</td>
+					<td>250,000원</td>
+					<td>5개월</td>
+					<td>9개 챕터, 27개 세부강의</td>
 					<td>Y</td>
 					<td>N</td>
-					<td>1년</td>
+					<td>Y</td>
 					<td>N</td>
-					<td>2020.05.31 05:10:52</td>
-			    </tr>
-			    <tr>
+					<td>2020.12.12 14:00:05</td>
+					<td>2020.12.12 14:00:05</td>
+				</tr>
+				<tr>
 					<td>
 						<input type="checkbox" name="check">
 					</td>
-					<th scope="row">2</th>
-					<td><a class="aaa" href="dmin_ViewForm_student.html">차은우</a></td>
-					<td>chacha</td>
-					<td>수강생</td>
-					<td>남성</td>
-					<td>1997.03.30</td>
-					<td>010-1997-0330</td>
-					<td>chaEuWoo@naver.com</td>
+					<th scope="row">6</th>
+					<td><a class="aaa" href="#">banzisu</a></td>
+					<td>오늘의 특가! TIME DEAL</td>
+					<td>일상에 따뜻한..</td>
+					<td>40%</td>
+					<td>300,000원</td>
+					<td>5개월</td>
+					<td>11개 챕터, 53개 세부강의</td>
+					<td>Y</td>
+					<td>Y</td>
 					<td>Y</td>
 					<td>N</td>
-					<td>1년</td>
-					<td>N</td>
-					<td>2020.05.31 05:10:52</td>
-			    </tr>
+					<td>2020.12.12 14:00:05</td>
+					<td>2020.12.12 14:00:05</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
 	
-	<div class="container-fluid" style="width:80%">
+	<div class="container-fluid" style="width:90%">
 		<div class="row justify-content-between">	
 	   		<div class="col-10">
 	     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
