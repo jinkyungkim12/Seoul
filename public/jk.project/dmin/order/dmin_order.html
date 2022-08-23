@@ -34,6 +34,9 @@
 		    font-weight: normal;
 		    font-style: normal;
 		}
+		.bgbg{
+			background-size: cover;
+		}
 	</style>
 </head>
 <body>
@@ -80,7 +83,7 @@
 	
 	<!-- 검색조건 -->
 	
-	<div><img src="../image/back2.jpg"></div>
+	<div class="bgbg"><img src="../image/back2.jpg"></div>
 	<div class="container-fluid" style="width: 90%; margin-top: 2rem;">
 		<div class="text-center ccc"><h1><b>주문관리</b></h1></div>
 		<div class="row justify-content-end" style="margin-top: 2rem;">
@@ -137,19 +140,16 @@
 						<input type="checkbox" name="check" onclick="selectAll(this)">
 					</th>
 					<th scope="col" >NO</th>
-					<th scope="col">카테고리</th>
-					<th scope="col">구분</th>
-					<th scope="col">강의제목</th>
-					<th scope="col">할인률</th>
+					<th scope="col">이름</th>
+					<th scope="col">아이디</th>
+					<th scope="col">클래스명</th>
 					<th scope="col">정가</th>
-					<th scope="col">할부</th>
-					<th scope="col">클래스 분량</th>
-					<th scope="col">수강가능</th>
-					<th scope="col">자막포함</th>
-					<th scope="col">키트포함</th>
-					<th scope="col">삭제여부</th>
-					<th scope="col">등록일</th>
-					<th scope="col">수정일</th>
+					<th scope="col">할인금액</th>
+					<th scope="col">쿠폰할인금액</th>
+					<th scope="col">최종가격</th>
+					<th scope="col">결제수단</th>
+					<th scope="col">주소</th>
+					<th scope="col">주문날짜</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -158,18 +158,15 @@
 						<input type="checkbox" name="check">
 					</td>
 					<th scope="row">1</th>
-					<td><a class="aaa" href="#">유랑</a></td>
-					<td>오늘의 특가! TIME DEAL</td>
+					<td><a class="aaa" href="#">김진경</a></td>
+					<td>yeriel</td>
 					<td>무명 이모티콘 작가..</td>
-					<td>40%</td>
 					<td>300,000원</td>
-					<td>5개월</td>
-					<td>12개 챕터, 45개 세부강의</td>
-					<td>Y</td>
-					<td>Y</td>
-					<td>Y</td>
-					<td>N</td>
-					<td>2020.12.12 14:00:05</td>
+					<td>120,000원</td>
+					<td>0원</td>
+					<td>180,000원</td>
+					<td>카카오페이</td>
+					<td>서울시 은평구 녹번동 녹번아파트</td>
 					<td>2020.12.12 14:00:05</td>
 				</tr>
 				<tr>
@@ -177,38 +174,64 @@
 						<input type="checkbox" name="check">
 					</td>
 					<th scope="row">2</th>
-					<td><a class="aaa" href="#">토익독학길잡이</a></td>
-					<td>오늘의 특가! TIME DEAL</td>
-					<td>국내 1위 토익..</td>
-					<td>20%</td>
-					<td>250,000원</td>
-					<td>5개월</td>
-					<td>9개 챕터, 27개 세부강의</td>
-					<td>Y</td>
-					<td>N</td>
-					<td>Y</td>
-					<td>N</td>
-					<td>2020.12.12 14:00:05</td>
-					<td>2020.12.12 14:00:05</td>
+					<td><a class="aaa" href="#">김우빈</a></td>
+					<td>ubini</td>
+					<td>무명 이모티콘 작가..</td>
+					<td>300,000원</td>
+					<td>120,000원</td>
+					<td>0원</td>
+					<td>180,000원</td>
+					<td>카카오페이</td>
+					<td>서울시 서대문구 홍은동 홍은주택</td>
+					<td>2021.05.05 21:12:21</td>
 				</tr>
 				<tr>
 					<td>
 						<input type="checkbox" name="check">
 					</td>
-					<th scope="row">6</th>
-					<td><a class="aaa" href="#">banzisu</a></td>
-					<td>오늘의 특가! TIME DEAL</td>
-					<td>일상에 따뜻한..</td>
-					<td>40%</td>
+					<th scope="row">3</th>
+					<td><a class="aaa" href="#">송강</a></td>
+					<td>kangsong</td>
+					<td>무명 이모티콘 작가..</td>
 					<td>300,000원</td>
-					<td>5개월</td>
-					<td>11개 챕터, 53개 세부강의</td>
-					<td>Y</td>
-					<td>Y</td>
-					<td>Y</td>
-					<td>N</td>
-					<td>2020.12.12 14:00:05</td>
-					<td>2020.12.12 14:00:05</td>
+					<td>120,000원</td>
+					<td>0원</td>
+					<td>180,000원</td>
+					<td>카카오페이</td>
+					<td>서울시 강남구 역삼동 역삼빌라</td>
+					<td>2021.07.06 04:15:05</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">4</th>
+					<td><a class="aaa" href="#">김우빈</a></td>
+					<td>ubini</td>
+					<td>국내 1위 토익..</td>
+					<td>250,000원</td>
+					<td>50,000원</td>
+					<td>10,000원</td>
+					<td>190,000원</td>
+					<td>카카오페이</td>
+					<td>서울시 마포구 연남동 연남빌라</td>
+					<td>2022.05.01 20:10:07</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<th scope="row">5</th>
+					<td><a class="aaa" href="#">송강</a></td>
+					<td>kangsong</td>
+					<td>국내 1위 토익..</td>
+					<td>250,000원</td>
+					<td>50,000원</td>
+					<td>0원</td>
+					<td>200,000원</td>
+					<td>카카오페이</td>
+					<td>서울시 강남구 신사동 신사아파트</td>
+					<td>2021.12.30 15:30:21</td>
 				</tr>
 			</tbody>
 		</table>
