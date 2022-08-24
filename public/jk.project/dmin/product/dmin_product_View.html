@@ -296,6 +296,7 @@
 	
 	<!-- 상세 -->
 	<div class="container-fluid p-4" style="width: 90%">
+		<div class="text-center ccc"><h1><b>클래스 상세</b></h1></div><br><br>
 		<!-- 페이지 -->
 		<div class="container">
 		<div class="row">
@@ -762,20 +763,46 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="col text-end sticky-bottom">
+		<a id="back-to-top" href="#" class="btn btn-outline-dark back-to-top-css rounded-circle" role="button" title="Move Top" data-toggle="tooltip" data-placement="left" style= "width:55px; height: 55px;">
+			<span class="glyphicon glyphicon-chevron-up"><small><i class="fa-solid fa-angles-up"></i><br>TOP</small></span>
+		</a>
+	</div>
+	<br>
+	<br>	
 		
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		function selectAll(selectAll)  {
-		  const checkboxes 
-		       = document.getElementsByName('check');
-		  
-		  checkboxes.forEach((checkbox) => {
-		    checkbox.checked = selectAll.checked;
-		  })
-		}
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+	
+		myModal.addEventListener('shown.bs.modal', () => {
+		  myInput.focus()
+		})
 	</script>
+	<script type="text/javascript">
+		 $(document).ready(function () {
+		        $(window).scroll(function () {
+		            if ($(this).scrollTop() > 50) {
+		                $('#back-to-top').fadeIn();
+		            } else {
+		                $('#back-to-top').fadeOut();
+		            }
+		        });
+		        // scroll body to 0px on click
+		        $('#back-to-top').click(function () {
+		            $('#back-to-top').tooltip('hide');
+		            $('body,html').animate({
+		                scrollTop: 0
+		            }, 800);
+		            return false;
+		        });
+	
+		        $('#back-to-top').tooltip('show');
+	
+		    });
+	</script> 
 </body>
 </html>
