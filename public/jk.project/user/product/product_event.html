@@ -81,6 +81,7 @@
 		.btn-dark{
 			--bs-btn-line-height: 3;
 		}
+		
 	</style>
 </head>
 <body>
@@ -152,8 +153,30 @@
 					<div class="text-center"  style="margin-top: 5rem;"><h1><b>여름 휴가비 쏩니다!<br>30만원 쿠폰팩</h1></b></div>
 					<div class="text-center"  style="margin-top: 2rem;"><h3>무더운 여름,<br>시원하게 통 크게 드려요</h3></div>
 					<div class="text-center" style="margin-top: 3rem;"><img src="../image/event1_2.png"></div>
+					
+					<!-- Modal btn -->
 					<div class="row justify-content-center" style="margin-top: 3rem; height: 4rem;">
-						<a type="button" href="#" role="button" class="btn btn-dark" style="width: 50%;">쿠폰팩 다운받기 <i class="fa-solid fa-download"></i></a>
+						<button type="button" class="btn btn-dark" style="width: 50%;" data-bs-toggle="modal" data-bs-target="#exampleModal">쿠폰팩 다운받기 <i class="fa-solid fa-download"></i></button>
+					</div>
+					
+					
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel"><b>CLASS 101</b></h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					      	<div><img src="../image/couponEvent.png"></div>
+					        <span style="margin-top: 3rem;"><b>6만원 쿠폰팩</b>이 발급되었습니다.<br>발급내용은 마이페이지 <b>"내 쿠폰"</b>에서 확인하실 수 있습니다.</span>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인</button>
+					      </div>
+					    </div>
+					  </div>
 					</div>	
 				</div>
 				
@@ -246,6 +269,14 @@
 	        $('#back-to-top').tooltip('show');
 
 	    });
-	</script> s
+	</script>
+	<script>
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+	
+		myModal.addEventListener('shown.bs.modal', () => {
+		  myInput.focus()
+		})
+	</script>
 </body>
 </html>
