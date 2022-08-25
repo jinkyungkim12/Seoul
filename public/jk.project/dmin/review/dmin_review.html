@@ -26,6 +26,19 @@
 		.bbb:active {
 		  color : #F7670E;
 		}
+		.bbb{
+		  color: white;
+		}
+		.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		  color: #ffffff;
+		  background-color: #f87320;
+		}
+		.nav-link:focus, .nav-link:hover {
+		  color: #F7670E;
+		}
+		.nav-link {
+		  color: gray;
+		}
 		.ccc{
 			font-family: 'GangwonEdu_OTFBoldA';
 		}
@@ -39,7 +52,7 @@
 </head>
 <body>
 
-<!-- start -->
+	<!-- start -->
 	
 	<nav class="navbar navbar-dark bg-dark fixed-top">
 	  <div class="container-fluid">
@@ -80,219 +93,236 @@
 	</nav>	
 	
 	
-	<!-- 검색조건 -->
+	<!-- tab -->
 	
 	<div><img src="../image/back2.jpg"></div>
 	<div class="container-fluid p-4" style="width: 90%">
 		<ul class="nav nav-tabs">
-		  <li class="nav-item">
-		    <a class="nav-link active text-white" style="background-color: #F87320" aria-current="page" href="#">리뷰관리</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link text-dark" href="#">코드그룹 관리</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link text-dark" href="#">코드관리</a>
-		  </li>
+		 <li class="nav-item">
+	    <a class="nav-link active" type="button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true">리뷰관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2" aria-selected="false">코드그룹 관리</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-contact3-tab" data-bs-toggle="pill" data-bs-target="#pills-contact3" type="button" role="tab" aria-controls="pills-contact3" aria-selected="false">코드관리</a>
+	  </li>
 		</ul>
 	</div>
-	<div class="container-fluid" style="width: 90%; margin-top: 2rem;">
-		<div class="text-center ccc"><h1><b>리뷰관리</b></h1></div>
-		<div class="row justify-content-end" style="margin-top: 2rem;">
-			<div class="col-2">
-				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>삭제여부</option>
-				  <option value="1">Y</option>
-				  <option value="2">N</option>
-				</select>
-			</div>
-			<div class="col-2">
-				<select class="form-select col-2" aria-label="Default select example">
-				  <option selected>선택</option>
-				  <option value="1">등록일</option>
-				  <option value="2">수정일</option>
-				</select>
-			</div>
-			<div class="col-2">
-				<input type="date" class="form-control" value="2020-01-01" aria-label="Recipient's username with two button addons">
-			</div>
-			<div class="col-2">
-				<input type="date" class="form-control" value="2022-07-01" aria-label="Recipient's username with two button addons">
+		
+		
+	<!-- 1st tab --> 
+	
+	<!-- 검색조건 -->
+	
+	<div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">	
+		<div class="container-fluid" style="width: 90%; margin-top: 2rem;">
+			<div class="text-center ccc"><h1><b>리뷰관리</b></h1></div>
+			<div class="row justify-content-end" style="margin-top: 2rem;">
+				<div class="col-2">
+					<select class="form-select col-2" aria-label="Default select example">
+					  <option selected>삭제여부</option>
+					  <option value="1">Y</option>
+					  <option value="2">N</option>
+					</select>
+				</div>
+				<div class="col-2">
+					<select class="form-select col-2" aria-label="Default select example">
+					  <option selected>선택</option>
+					  <option value="1">등록일</option>
+					  <option value="2">수정일</option>
+					</select>
+				</div>
+				<div class="col-2">
+					<input type="date" class="form-control" value="2020-01-01" aria-label="Recipient's username with two button addons">
+				</div>
+				<div class="col-2">
+					<input type="date" class="form-control" value="2022-07-01" aria-label="Recipient's username with two button addons">
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid p-4" style="width: 90%">
-		<div class="row justify-content-end">
-			<div class="col-2">
-				<select class="form-select" aria-label="Default select example">
-				  <option selected>검색구분</option>
-				  <option value="1">이름</option>
-				  <option value="2">성별</option>
-				  <option value="3">아이디</option>
-				  <option value="4">내용</option>
-				  <option value="5">강의번호</option>
-				  <option value="6">삭제여부</option>
-				  <option value="7">등록일</option>
-				  <option value="8">수정일</option>
-				</select>
+		<div class="container-fluid p-4" style="width: 90%">
+			<div class="row justify-content-end">
+				<div class="col-2">
+					<select class="form-select" aria-label="Default select example">
+					  <option selected>검색구분</option>
+					  <option value="1">이름</option>
+					  <option value="2">성별</option>
+					  <option value="3">아이디</option>
+					  <option value="4">내용</option>
+					  <option value="5">강의번호</option>
+					  <option value="6">삭제여부</option>
+					  <option value="7">등록일</option>
+					  <option value="8">수정일</option>
+					</select>
+				</div>
+				<div class="col-4">
+					<input type="text" class="form-control" placeholder="검색어를 입력하세요." aria-label="Recipient's username with two button addons">
+				</div>
+				<div class="col-2">
+				 	<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+					<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-rotate-left"></i></button>
+				</div>
 			</div>
-			<div class="col-4">
-				<input type="text" class="form-control" placeholder="검색어를 입력하세요." aria-label="Recipient's username with two button addons">
-			</div>
-			<div class="col-2">
-			 	<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-				<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-rotate-left"></i></button>
-			</div>
+		</div>
+		
+		
+		<!-- review List -->
+		
+		<div class="container-fluid text-center" style="width: 90%">
+			<table class="table table-hover" id="minus">
+				<thead>
+					<tr class="table-dark text-white">
+						<th scope="col" >
+							<input type="checkbox" name="check" onclick="selectAll(this)">
+						</th>
+						<th scope="col" >NO</th>
+						<th scope="col">이름</th>
+						<th scope="col">성별</th>
+						<th scope="col">아이디</th>
+						<th scope="col">내용</th>
+						<th scope="col">강의번호</th>
+						<th scope="col">삭제여부</th>
+						<th scope="col">등록일</th>
+						<th scope="col">수정일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox" name="check">
+						</td>
+						<th scope="row">1</th>
+						<td>김진경</td>
+						<td>여성</td>
+						<td>yeriel</td>
+						<td>처음듣는데 매우 재밌습니다!</td>
+						<td>1</td>
+						<td>N</td>
+						<td>2020-01-02 10:05:01</td>
+						<td>2020-01-02 10:05:01</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check">
+						</td>
+						<th scope="row">2</th>
+						<td>차은우</td>
+						<td>남성</td>
+						<td>chacha</td>
+						<td>이모티콘 처음 만들어보는데 신나용!</td>
+						<td>1</td>
+						<td>N</td>
+						<td>2021-10-02 01:05:11</td>
+						<td>2021-10-02 01:05:15</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check">
+						</td>
+						<th scope="row">3</th>
+						<td>송강</td>
+						<td>남성</td>
+						<td>kangsong</td>
+						<td>이모티콘 수익화 성공했습니다!</td>
+						<td>1</td>
+						<td>N</td>
+						<td>2022-01-02 12:05:20</td>
+						<td>2022-01-02 12:05:20</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check">
+						</td>
+						<th scope="row">4</th>
+						<td>김연아</td>
+						<td>여성</td>
+						<td>yunakk</td>
+						<td>토익점수가 생각보다 너무 안늘어서 속상합니다..</td>
+						<td>2</td>
+						<td>N</td>
+						<td>2020-10-02 20:10:50</td>
+						<td>2020-10-02 20:10:50</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check">
+						</td>
+						<th scope="row">5</th>
+						<td>배수지</td>
+						<td>여성</td>
+						<td>suzybae</td>
+						<td>연말에 강의듣는데 재밌어요 ㅎㅎ</td>
+						<td>2</td>
+						<td>N</td>
+						<td>2021-12-31 22:05:00</td>
+						<td>2021-12-31 22:05:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="container-fluid" style="width:90%">
+			<div class="row justify-content-between">	
+		   		<div class="col-10">
+		     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
+		     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
+		    	</div>
+		    	<div class="col-2 text-end">
+		     		<a type="button" class="btn btn-dark" href="#" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
+					<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
+		    	</div>
+		    </div>	
+	   </div>
+	
+		<div class="container p-10">
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination justify-content-center">
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Class101</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        정말로 삭제하시겠습니까?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+		        <button type="button" class="btn btn-dark">삭제 </button>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	</div>
 	
 	
-	<!-- member table -->
-	
-	<div class="container-fluid text-center" style="width: 90%">
-		<table class="table table-hover" id="minus">
-			<thead>
-				<tr class="table-dark text-white">
-					<th scope="col" >
-						<input type="checkbox" name="check" onclick="selectAll(this)">
-					</th>
-					<th scope="col" >NO</th>
-					<th scope="col">이름</th>
-					<th scope="col">성별</th>
-					<th scope="col">아이디</th>
-					<th scope="col">내용</th>
-					<th scope="col">강의번호</th>
-					<th scope="col">삭제여부</th>
-					<th scope="col">등록일</th>
-					<th scope="col">수정일</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<input type="checkbox" name="check">
-					</td>
-					<th scope="row">1</th>
-					<td>김진경</a></td>
-					<td>여성</td>
-					<td>yeriel</td>
-					<td>처음듣는데 매우 재밌습니다!</td>
-					<td>1</td>
-					<td>N</td>
-					<td>2020-01-02 10:05:01</td>
-					<td>2020-01-02 10:05:01</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" name="check">
-					</td>
-					<th scope="row">2</th>
-					<td>차은우</a></td>
-					<td>남성</td>
-					<td>chacha</td>
-					<td>이모티콘 처음 만들어보는데 신나용!</td>
-					<td>1</td>
-					<td>N</td>
-					<td>2021-10-02 01:05:11</td>
-					<td>2021-10-02 01:05:15</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" name="check">
-					</td>
-					<th scope="row">3</th>
-					<td>송강</a></td>
-					<td>남성</td>
-					<td>kangsong</td>
-					<td>이모티콘 수익화 성공했습니다!</td>
-					<td>1</td>
-					<td>N</td>
-					<td>2022-01-02 12:05:20</td>
-					<td>2022-01-02 12:05:20</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" name="check">
-					</td>
-					<th scope="row">4</th>
-					<td>김연아</a></td>
-					<td>여성</td>
-					<td>yunakk</td>
-					<td>토익점수가 생각보다 너무 안늘어서 속상합니다..</td>
-					<td>2</td>
-					<td>N</td>
-					<td>2020-10-02 20:10:50</td>
-					<td>2020-10-02 20:10:50</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" name="check">
-					</td>
-					<th scope="row">5</th>
-					<td>배수지</a></td>
-					<td>여성</td>
-					<td>suzybae</td>
-					<td>연말에 강의듣는데 재밌어요 ㅎㅎ</td>
-					<td>2</td>
-					<td>N</td>
-					<td>2021-12-31 22:05:00</td>
-					<td>2021-12-31 22:05:00</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	
-	<div class="container-fluid" style="width:90%">
-		<div class="row justify-content-between">	
-	   		<div class="col-10">
-	     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
-	     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
-	    	</div>
-	    	<div class="col-2 text-end">
-	     		<a type="button" class="btn btn-dark" href="#" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
-				<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
-	    	</div>
-	    </div>	
-   </div>
+	<!-- 2nd Tab: CodeGroup -->
+	<div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab" tabindex="0"></div>
 
-	<div class="container p-10">
-		<nav aria-label="Page navigation example">
-		  <ul class="pagination justify-content-center">
-		    <li class="page-item">
-		      <a class="page-link" href="#" aria-label="Previous">
-		        <span aria-hidden="true">&laquo;</span>
-		      </a>
-		    </li>
-		    <li class="page-item"><a class="page-link" href="#">1</a></li>
-		    <li class="page-item"><a class="page-link" href="#">2</a></li>
-		    <li class="page-item"><a class="page-link" href="#">3</a></li>
-		    <li class="page-item">
-		      <a class="page-link" href="#" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
-		      </a>
-		    </li>
-		  </ul>
-		</nav>
-	</div>
+
+	<!-- 3rd Tab: Code -->
+	<div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact3-tab" tabindex="0"></div>
 	
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Class101</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	        정말로 삭제하시겠습니까?
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-	        <button type="button" class="btn btn-dark">삭제 </button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 		
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
