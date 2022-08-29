@@ -94,28 +94,21 @@
 	<div class="container-fluid p-4" style="width: 80%">
 	<ul class="nav nav-tabs" id="myTab" role="tablist">
 	  <li class="nav-item" role="presentation">
-	    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">회원관리</button>
+	    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">코드그룹 관리</button>
 	  </li>
 	  &emsp;
 	  <li class="nav-item" role="presentation">
-	    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">코드그룹 관리</button>
-	  </li>
-	  &emsp;
-	  <li class="nav-item" role="presentation">
-	    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">코드 관리</button>
+	    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">코드 관리</button>
 	  </li>
 	</ul>
 	<div class="tab-content" id="myTabContent">
 	
 	
-	<!-- 첫 번째 탭 -->	
-	<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
-		
-	
 	<!-- 두 번째 탭 -->	
-	<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-		<div class="container-fluid" style="margin-top: 5rem;">
-			<div class="row justify-content-end">
+	<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+		<div class="container-fluid" style="margin-top: 3rem;">
+			<div class="text-center ccc"><h1><b>코드그룹 관리</b></h1></div>
+			<div class="row justify-content-end"  style="margin-top: 3rem;">
 				<div class="col-2">
 					<select class="form-select col-2" aria-label="Default select example">
 					  <option selected>삭제여부</option>
@@ -125,16 +118,16 @@
 				</div>
 				<div class="col-2">
 					<select class="form-select col-2" aria-label="Default select example">
-					  <option selected>선택</option>
-					  <option value="1">생년월일</option>
-					  <option value="2">회원등록일</option>
+					  <option selected>수정일</option>
+					  <option value="1">수정일</option>
+					  <option value="2">등록일</option>
 					</select>
 				</div>
 				<div class="col-2">
-					<input type="date" class="form-control" value="2020-01-01" aria-label="Recipient's username with two button addons">
+					<input type="text" class="form-control" placeholder="시작일">
 				</div>
 				<div class="col-2">
-					<input type="date" class="form-control" value="2022-07-01" aria-label="Recipient's username with two button addons">
+					<input type="text" class="form-control" placeholder="종료일">
 				</div>
 			</div>
 		</div>
@@ -143,13 +136,10 @@
 				<div class="col-2">
 					<select class="form-select" aria-label="Default select example">
 					  <option selected>검색구분</option>
-					  <option value="1">이름</option>
-					  <option value="2">아이디</option>
-					  <option value="3">성별</option>
-					  <option value="4">메일주소</option>
-					  <option value="5">연락처</option>
-					  <option value="5">크리에이터</option>
-					  <option value="5">수강생</option>
+					  <option value="1">코드그룹 코드</option>
+					  <option value="2">코드그룹 이름(한글)</option>
+					  <option value="3">코드그룹 이름(영문)</option>
+					  <option value="4">코드갯수</option>
 					</select>
 				</div>
 				<div class="col-4">
@@ -187,10 +177,10 @@
 							<input class="check" type="checkbox" name="check">
 						</td>
 						<th scope="row">1</th>
-						<td>김진경</td>
-						<td><a class="aaa" href="#">yeriel</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<td></td>
+						<td><a class="aaa" href="#">통신사</a></td>
+						<td>telCompany</td>
+						<td>3</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -198,11 +188,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>김진경</td>
-						<td><a class="aaa" href="#">yeriel</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">2</th>
+						<td></td>
+						<td><a class="aaa" href="#">성별</a></td>
+						<td>gender</td>
+						<td>2</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 				    </tr>
@@ -210,35 +200,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>김진경</td>
-						<td><a class="aaa" href="#">yeriel</a></td>
-						<td>수강생</td>
-						<td>여성</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">1</th>
-						<td>김진경</td>
-						<td><a class="aaa" href="#">yeriel</a></td>
-						<td>수강생</td>
-						<td>여성</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">1</th>
+						<th scope="row">3</th>
 						<td></td>
-						<td><a class="aaa" href="#">yeriel</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<td><a class="aaa" href="#">결제수단</a></td>
+						<td>pay</td>
+						<td>2</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -246,11 +212,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>ㄴㄴㄴ</td>
-						<td><a class="aaa" href="#">김진경</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">4</th>
+						<td></td>
+						<td><a class="aaa" href="#">배송요청사항</a></td>
+						<td>Request</td>
+						<td>3</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -258,11 +224,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>ㄴㄴㄴ</td>
-						<td><a class="aaa" href=#>김진경</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">5</th>
+						<td></td>
+						<td><a class="aaa" href="#">별점</a></td>
+						<td>peferenceStar</td>
+						<td>5</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -270,11 +236,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>ㄴㄴㄴ</td>
-						<td><a class="aaa" href="#">김진경</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">6</th>
+						<td></td>
+						<td><a class="aaa" href="#">할부개월</a></td>
+						<td>payMonth</td>
+						<td>2</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -282,11 +248,11 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>ㄴㄴㄴ</td>
-						<td><a class="aaa" href="#">김진경</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">7</th>
+						<td></td>
+						<td><a class="aaa" href=#>개인정보동의</a></td>
+						<td>personalInfo</td>
+						<td>4</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -294,11 +260,35 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>ㄴㄴㄴ</td>
-						<td><a class="aaa" href="#">김진경</a></td>
-						<td>수강생</td>
-						<td>여성</td>
+						<th scope="row">8</th>
+						<td></td>
+						<td><a class="aaa" href="#">직책</a></td>
+						<td>position</td>
+						<td>3</td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">9</th>
+						<td></td>
+						<td><a class="aaa" href="#">카테고리분류</a></td>
+						<td>classDiv</td>
+						<td>3</td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">10</th>
+						<td></td>
+						<td><a class="aaa" href="#">이메일도메인</a></td>
+						<td>emailDomain</td>
+						<td>3</td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -361,9 +351,10 @@
 		
 
 	<!-- 세 번째 -->
-	<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-		<div class="container-fluid" style="margin-top: 5rem;">
-			<div class="row justify-content-end">
+	<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+		<div class="container-fluid" style="margin-top: 3rem;">
+			<div class="text-center ccc"><h1><b>코드 관리</b></h1></div>
+			<div class="row justify-content-end" style="margin-top: 3rem;">
 				<div class="col-2">
 					<select class="form-select col-2" aria-label="Default select example">
 					  <option selected>삭제여부</option>
@@ -373,16 +364,16 @@
 				</div>
 				<div class="col-2">
 					<select class="form-select col-2" aria-label="Default select example">
-					  <option selected>선택</option>
-					  <option value="1">생년월일</option>
-					  <option value="2">회원등록일</option>
+					  <option selected>수정일</option>
+					  <option value="1">수정일</option>
+					  <option value="2">등록일</option>
 					</select>
 				</div>
 				<div class="col-2">
-					<input type="date" class="form-control" value="2020-01-01" aria-label="Recipient's username with two button addons">
+					<input type="text" class="form-control" placeholder="시작일">
 				</div>
 				<div class="col-2">
-					<input type="date" class="form-control" value="2022-07-01" aria-label="Recipient's username with two button addons">
+					<input type="text" class="form-control" placeholder="종료일">
 				</div>
 			</div>
 		</div>
@@ -391,13 +382,10 @@
 				<div class="col-2">
 					<select class="form-select" aria-label="Default select example">
 					  <option selected>검색구분</option>
-					  <option value="1">이름</option>
-					  <option value="2">아이디</option>
-					  <option value="3">성별</option>
-					  <option value="4">메일주소</option>
-					  <option value="5">연락처</option>
-					  <option value="5">크리에이터</option>
-					  <option value="5">수강생</option>
+					  <option value="1">코드그룹 코드</option>
+					  <option value="2">코드그룹 이름(한글)</option>
+					  <option value="3">코드그룹 이름(영문)</option>
+					  <option value="4">코드갯수</option>
 					</select>
 				</div>
 				<div class="col-4">
@@ -435,14 +423,14 @@
 							<input class="check" type="checkbox" name="check">
 						</td>
 						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
-						<td>Y</td>
 						<td>1</td>
+						<td>통신사</td>
+						<td>1</td>
+						<td></td>
+						<td><a class="aaa" href="#">SKT</a></td>
+						<td>SKT</td>
+						<td>Y</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -450,15 +438,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
-						<td>Y</td>
+						<th scope="row">2</th>
 						<td>1</td>
+						<td>통신사</td>
+						<td>2</td>
+						<td></td>
+						<td><a class="aaa" href="#">KT</a></td>
+						<td>KT</td>
+						<td>Y</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 				    </tr>
@@ -466,15 +454,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
-						<td>Y</td>
+						<th scope="row">3</th>
 						<td>1</td>
+						<td>통신사</td>
+						<td>3</td>
+						<td></td>
+						<td><a class="aaa" href="#">LGT</a></td>
+						<td>LGT</td>
+						<td>Y</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -482,15 +470,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">4</th>
+						<td>2</td>
+						<td>성별</td>
+						<td>4</td>
+						<td></td>
+						<td><a class="aaa" href="#">남성</a></td>
+						<td>male</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -498,15 +486,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">5</th>
+						<td>2</td>
+						<td>성별</td>
+						<td>5</td>
+						<td></td>
+						<td><a class="aaa" href="#">여성</a></td>
+						<td>female</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -514,15 +502,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">6</th>
+						<td>3</td>
+						<td>결제방식</td>
+						<td>6</td>
+						<td></td>
+						<td><a class="aaa" href="#">카카오페이</a></td>
+						<td>KakaoPay</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -530,15 +518,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">7</th>
+						<td>3</td>
+						<td>결제방식</td>
+						<td>7</td>
+						<td></td>
+						<td><a class="aaa" href="#">무통장입금</a></td>
+						<td>withoutBankbook</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -546,15 +534,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">8</th>
+						<td>4</td>
+						<td>배송요청사항</td>
+						<td>8</td>
+						<td></td>
+						<td><a class="aaa" href="#">없음</a></td>
+						<td>none</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -562,15 +550,15 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
-						<td>영문</td>
+						<th scope="row">9</th>
+						<td>4</td>
+						<td>배송요청사황</td>
+						<td>9</td>
+						<td></td>
+						<td><a class="aaa" href="#">문 앞에 놔두고 가주세요</a></td>
+						<td>Please, Leave it at the door</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
@@ -578,15 +566,335 @@
 						<td>
 							<input class="check" type="checkbox" name="check">
 						</td>
-						<th scope="row">1</th>
-						<td>코드그룹 코드</td>
-						<td>한글</td>
-						<td>코드</td>
-						<td>대체코드</td>
-						<td><a class="aaa" href="#">한글</a></td>
+						<th scope="row">10</th>
+						<td>4</td>
+						<td>배송요청사항</td>
+						<td>10</td>
+						<td></td>
+						<td><a class="aaa" href="#">배송 전 연락바랍니다.</a></td>
+						<td>Please, contact me before delivery</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">11</th>
+						<td>5</td>
+						<td>별점</td>
+						<td>11</td>
+						<td></td>
+						<td><a class="aaa" href="#">1점</a></td>
+						<td>1 point</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+			   		<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">12</th>
+						<td>5</td>
+						<td>별점</td>
+						<td>12</td>
+						<td></td>
+						<td><a class="aaa" href="#">2점</a></td>
+						<td>2 points</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+				    </tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">13</th>
+						<td>5</td>
+						<td>별점</td>
+						<td>13</td>
+						<td></td>
+						<td><a class="aaa" href="#">3점</a></td>
+						<td>3 points</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">14</th>
+						<td>5</td>
+						<td>별점</td>
+						<td>14</td>
+						<td></td>
+						<td><a class="aaa" href="#">4점</a></td>
+						<td>4 points</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">15</th>
+						<td>5</td>
+						<td>별점</td>
+						<td>15</td>
+						<td></td>
+						<td><a class="aaa" href="#">5점</a></td>
+						<td>5 points</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">16</th>
+						<td>6</td>
+						<td>할부개월</td>
+						<td>16</td>
+						<td></td>
+						<td><a class="aaa" href="#">할부 5개월</a></td>
+						<td>5 month</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">17</th>
+						<td>6</td>
+						<td>할부개월</td>
+						<td>17</td>
+						<td></td>
+						<td><a class="aaa" href="#">할부 12개월</a></td>
+						<td>12 month</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">18</th>
+						<td>7</td>
+						<td>개인정보동의</td>
+						<td>18</td>
+						<td></td>
+						<td><a class="aaa" href="#">1년</a></td>
+						<td>1 year</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">19</th>
+						<td>7</td>
+						<td>개인정보동의</td>
+						<td>19</td>
+						<td></td>
+						<td><a class="aaa" href="#">2년</a></td>
+						<td>2 years</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">20</th>
+						<td>7</td>
+						<td>개인정보동의</td>
+						<td>20</td>
+						<td></td>
+						<td><a class="aaa" href="#">3년</a></td>
+						<td>3 years</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">21</th>
+						<td>1</td>
+						<td>통신사</td>
+						<td>1</td>
+						<td></td>
+						<td><a class="aaa" href="#">SKT</a></td>
+						<td>SKT</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+			   		<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">2</th>
+						<td>1</td>
+						<td>통신사</td>
+						<td>2</td>
+						<td></td>
+						<td><a class="aaa" href="#">KT</a></td>
+						<td>KT</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+				    </tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">3</th>
+						<td>1</td>
+						<td>통신사</td>
+						<td>3</td>
+						<td></td>
+						<td><a class="aaa" href="#">LGT</a></td>
+						<td>LGT</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">4</th>
+						<td>2</td>
+						<td>성별</td>
+						<td>4</td>
+						<td></td>
+						<td><a class="aaa" href="#">남성</a></td>
+						<td>male</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">5</th>
+						<td>2</td>
+						<td>성별</td>
+						<td>5</td>
+						<td></td>
+						<td><a class="aaa" href="#">여성</a></td>
+						<td>female</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">6</th>
+						<td>3</td>
+						<td>결제방식</td>
+						<td>6</td>
+						<td></td>
+						<td><a class="aaa" href="#">카카오페이</a></td>
+						<td>KakaoPay</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">7</th>
+						<td>3</td>
+						<td>결제방식</td>
+						<td>7</td>
+						<td></td>
+						<td><a class="aaa" href="#">무통장입금</a></td>
+						<td>withoutBankbook</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">8</th>
+						<td>4</td>
+						<td>배송요청사항</td>
+						<td>8</td>
+						<td></td>
+						<td><a class="aaa" href="#">없음</a></td>
+						<td>none</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">9</th>
+						<td>4</td>
+						<td>배송요청사황</td>
+						<td>9</td>
+						<td></td>
+						<td><a class="aaa" href="#">문 앞에 놔두고 가주세요</a></td>
+						<td>Please, Leave it at the door</td>
+						<td>Y</td>
+						<td></td>
+						<td>2020.12.12 14:00:05</td>
+						<td>2020.12.12 14:00:05</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="check" type="checkbox" name="check">
+						</td>
+						<th scope="row">10</th>
+						<td>4</td>
+						<td>배송요청사항</td>
+						<td>10</td>
+						<td>Please, contact me before delivery</td>
+						<td><a class="aaa" href="#">배송 전 연락바랍니다.</a></td>
 						<td>영문</td>
 						<td>Y</td>
-						<td>1</td>
+						<td></td>
 						<td>2020.12.12 14:00:05</td>
 						<td>2020.12.12 14:00:05</td>
 					</tr>
