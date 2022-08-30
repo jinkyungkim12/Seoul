@@ -90,268 +90,10 @@
 	
 	<!-- tab -->
 		
-	<div><img src="../image/back2.jpg"></div>
+	<div><img src="./image/back2.jpg"></div>
 	<div class="container-fluid p-4" style="width: 80%">
-	<ul class="nav nav-tabs" id="myTab" role="tablist">
-	  <li class="nav-item" role="presentation">
-	    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">코드그룹 관리</button>
-	  </li>
-	  &emsp;
-	  <li class="nav-item" role="presentation">
-	    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">코드 관리</button>
-	  </li>
-	</ul>
-	<div class="tab-content" id="myTabContent">
-	
-	
-	<!-- 두 번째 탭 -->	
-	<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-		<div class="container-fluid" style="margin-top: 3rem;">
-			<div class="text-center ccc"><h1><b>코드그룹 관리</b></h1></div>
-			<div class="row justify-content-end"  style="margin-top: 3rem;">
-				<div class="col-2">
-					<select class="form-select col-2" aria-label="Default select example">
-					  <option selected>삭제여부</option>
-					  <option value="1">Y</option>
-					  <option value="2">N</option>
-					</select>
-				</div>
-				<div class="col-2">
-					<select class="form-select col-2" aria-label="Default select example">
-					  <option selected>수정일</option>
-					  <option value="1">수정일</option>
-					  <option value="2">등록일</option>
-					</select>
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-control" placeholder="시작일">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-control" placeholder="종료일">
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid p-4">
-			<div class="row justify-content-end">
-				<div class="col-2">
-					<select class="form-select" aria-label="Default select example">
-					  <option selected>검색구분</option>
-					  <option value="1">코드그룹 코드</option>
-					  <option value="2">코드그룹 이름(한글)</option>
-					  <option value="3">코드그룹 이름(영문)</option>
-					  <option value="4">코드갯수</option>
-					</select>
-				</div>
-				<div class="col-4">
-					<input type="text" class="form-control" placeholder="검색어를 입력하세요." aria-label="Recipient's username with two button addons">
-				</div>
-				<div class="col-2">
-				 	<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-					<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-rotate-left"></i></button>
-				</div>
-			</div>
-		</div>
-		
-		
-		<!-- List -->
-		
-		<div class="container-fluid text-center">
-			<table class="table table-hover" id="minus">
-				<thead>
-					<tr class="table-dark text-white">
-						<th scope="col" >
-							<input class="check" type="checkbox" name="check" onclick="selectAll(this)">
-						</th>
-						<th scope="col" >NO</th>
-						<th scope="col">코드그룹 코드</th>
-						<th scope="col">코드그룹 이름(한글)</th>
-						<th scope="col">코드그룹 이름(영문)</th>
-						<th scope="col">코드갯수</th>
-						<th scope="col">등록일</th>
-						<th scope="col">수정일</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">1</th>
-						<td></td>
-						<td><a class="aaa" href="#">통신사</a></td>
-						<td>telCompany</td>
-						<td>3</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-			   		<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">2</th>
-						<td></td>
-						<td><a class="aaa" href="#">성별</a></td>
-						<td>gender</td>
-						<td>2</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-				    </tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">3</th>
-						<td></td>
-						<td><a class="aaa" href="#">결제수단</a></td>
-						<td>pay</td>
-						<td>2</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">4</th>
-						<td></td>
-						<td><a class="aaa" href="#">배송요청사항</a></td>
-						<td>Request</td>
-						<td>3</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">5</th>
-						<td></td>
-						<td><a class="aaa" href="#">별점</a></td>
-						<td>peferenceStar</td>
-						<td>5</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">6</th>
-						<td></td>
-						<td><a class="aaa" href="#">할부개월</a></td>
-						<td>payMonth</td>
-						<td>2</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">7</th>
-						<td></td>
-						<td><a class="aaa" href=#>개인정보동의</a></td>
-						<td>personalInfo</td>
-						<td>4</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">8</th>
-						<td></td>
-						<td><a class="aaa" href="#">직책</a></td>
-						<td>position</td>
-						<td>3</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">9</th>
-						<td></td>
-						<td><a class="aaa" href="#">카테고리분류</a></td>
-						<td>classDiv</td>
-						<td>3</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-					<tr>
-						<td>
-							<input class="check" type="checkbox" name="check">
-						</td>
-						<th scope="row">10</th>
-						<td></td>
-						<td><a class="aaa" href="#">이메일도메인</a></td>
-						<td>emailDomain</td>
-						<td>3</td>
-						<td>2020.12.12 14:00:05</td>
-						<td>2020.12.12 14:00:05</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		
-		<div class="container-fluid">
-			<div class="row justify-content-between">	
-		   		<div class="col-10">
-		     		<a type="button" class="btn btn-dark" onclick='deleteRow(-1)'><i class="fa-solid fa-circle-minus"></i></a>
-		     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
-		    	</div>
-		    	<div class="col-2 text-end">
-		     		<a type="button" class="btn btn-dark" href="dmin_RegForm_student.html" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
-					<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
-		    	</div>
-		    </div>	
-	   </div>
-	
-		<div class="container p-10">
-			<nav aria-label="Page navigation example">
-			  <ul class="pagination justify-content-center">
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Previous">
-			        <span aria-hidden="true">&laquo;</span>
-			      </a>
-			    </li>
-			    <li class="page-item"><a class="page-link" href="#">1</a></li>
-			    <li class="page-item"><a class="page-link" href="#">2</a></li>
-			    <li class="page-item"><a class="page-link" href="#">3</a></li>
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Next">
-			        <span aria-hidden="true">&raquo;</span>
-			      </a>
-			    </li>
-			  </ul>
-			</nav>
-		</div>
-		
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Class101</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		      </div>
-		      <div class="modal-body">
-		        정말로 삭제하시겠습니까?
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-		        <button type="button" class="btn btn-dark">삭제 </button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
-		
 
 	<!-- 세 번째 -->
-	<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 		<div class="container-fluid" style="margin-top: 3rem;">
 			<div class="text-center ccc"><h1><b>코드 관리</b></h1></div>
 			<div class="row justify-content-end" style="margin-top: 3rem;">
@@ -396,7 +138,19 @@
 					<button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-rotate-left"></i></button>
 				</div>
 			</div>
+			<div class="row justify-content-between" style="margin-top: 3rem;">
+				<div class="col-1 text-start"><h5><b>Total: </b></h5></div>
+				<div class="col-1 text-end">
+					<select class="form-select" aria-label="Default select example">
+					  <option selected>10</option>
+					  <option value="1">10</option>
+					  <option value="2">20</option>
+					  <option value="3">30</option>
+					</select>
+				</div>
+			</div>
 		</div>
+		
 		<div class="container-fluid text-center">
 			<table class="table table-hover" id="minus">
 				<thead>
