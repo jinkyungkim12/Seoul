@@ -42,6 +42,15 @@
 		.check {
 		  accent-color: #F7670E;
 		}
+		.container-fluid{
+			font-family: 'Happiness-Sans-Regular';	
+		}
+		@font-face {
+		    font-family: 'Happiness-Sans-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Regular.woff2') format('woff2');
+		    font-weight: 400;
+		    font-style: normal;
+		}
 	</style>
 </head>
 <body>
@@ -64,16 +73,22 @@
 	      <div class="offcanvas-body">
 	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 	          <li class="nav-item">
-	            <a class="nav-link bbb" href="../member/dmin_List.html">회원관리</a>
+	            <a class="nav-link bbb" href="./member/dmin_List.html">회원관리</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link bbb" href="../product/dmin_product.html">클래스관리</a>
+	            <a class="nav-link bbb" href="./product/dmin_product.html">클래스관리</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link bbb" href="../review/dmin_review.html">리뷰관리</a>
+	            <a class="nav-link bbb" href="./review/dmin_review.html">리뷰관리</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link bbb" href="../order/dmin_order.html">주문관리</a>
+	            <a class="nav-link bbb" href="./order/dmin_order.html">주문관리</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link bbb" href="codeGroup.html">코드그룹관리</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link bbb" href="code.html">코드관리</a>
 	          </li>
 	        </ul>
 	        <div class="text-center">
@@ -181,7 +196,7 @@
 						<td>통신사</td>
 						<td>1</td>
 						<td></td>
-						<td><a class="aaa" href="#">SKT</a></td>
+						<td><a class="aaa" href="codeModForm.html">SKT</a></td>
 						<td>SKT</td>
 						<td>Y</td>
 						<td></td>
@@ -663,7 +678,7 @@
 			     		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제하기<i class="fa-solid fa-trash-can"></i></button>
 			    	</div>
 			    	<div class="col-2 text-end">
-			     		<a type="button" class="btn btn-dark" href="dmin_RegForm_student.html" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
+			     		<a type="button" class="btn btn-dark" href="codeForm.html" style="color: white;">등록하기<i class="fa-solid fa-file-arrow-up"></i></a>
 						<button type="button" class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i></button>
 			    	</div>
 			    </div>	
