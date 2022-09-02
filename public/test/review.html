@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- start -->
+
+<section class="pt-9 pb-11" id="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Heading -->
+            <h4 class="mb-10 text-center">Customer Reviews</h4>
+
+            <!-- Header -->
+            <div class="row align-items-center">
+              <div class="col-12 col-md-auto">
+
+                <!-- Dropdown -->
+                <div class="dropdown mb-4 mb-md-0">
+
+                  <!-- Toggle -->
+                  <a class="dropdown-toggle text-reset" data-bs-toggle="dropdown" href="#">
+                    <strong>Sort by: Newest</strong>
+                  </a>
+
+                  <!-- Menu -->
+                  <div class="dropdown-menu mt-3">
+                    <a class="dropdown-item" href="#!">Newest</a>
+                    <a class="dropdown-item" href="#!">Oldest</a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-md text-md-center">
+
+                <!-- Rating -->
+                <div class="rating text-dark h6 mb-4 mb-md-0" data-value="4">
+                </div>
+
+                <!-- Count -->
+                <strong class="fs-sm ms-2">Reviews (3)</strong>
+
+              </div>
+              <div class="col-12 col-md-auto">
+
+                <!-- Button -->
+                <a class="btn btn-sm btn-dark collapsed" data-bs-toggle="collapse" href="#reviewForm" aria-expanded="false">
+                  Write Review
+                </a>
+
+              </div>
+            </div>
+
+            <!-- New Review -->
+            <div class="collapse" id="reviewForm" style="">
+
+              <!-- Divider -->
+              <hr class="my-8">
+
+              <!-- Form -->
+              <form>
+                <div class="row">
+                  <div class="col-12 mb-6 text-center">
+
+                    <!-- Text -->
+                    <p class="mb-1 fs-xs">
+                      Score:
+                    </p>
+
+                    <!-- Rating form -->
+                    <div class="rating-form">
+
+                      <!-- Input -->
+                      <input class="rating-input" type="range" min="1" max="5" value="5">
+
+                      <!-- Rating -->
+                      <div class="rating h5 text-dark" data-value="5">
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewName">Your Name:</label>
+                      <input class="form-control form-control-sm" id="reviewName" type="text" placeholder="Your Name *" required="">
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewEmail">Your Email:</label>
+                      <input class="form-control form-control-sm" id="reviewEmail" type="email" placeholder="Your Email *" required="">
+                    </div>
+
+                  </div>
+                  <div class="col-12">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewTitle">Review Title:</label>
+                      <input class="form-control form-control-sm" id="reviewTitle" type="text" placeholder="Review Title *" required="">
+                    </div>
+
+                  </div>
+                  <div class="col-12">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewText">Review:</label>
+                      <textarea class="form-control form-control-sm" id="reviewText" rows="5" placeholder="Review *" required=""></textarea>
+                    </div>
+
+                  </div>
+                  <div class="col-12 text-center">
+
+                    <!-- Button -->
+                    <button class="btn btn-outline-dark" type="submit">
+                      Post Review
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+            <!-- Reviews -->
+            <div class="mt-8">
+
+              <!-- Review -->
+              <div class="review">
+                <div class="review-body">
+                  <div class="row">
+                    <div class="col-12 col-md-auto">
+
+                      <!-- Avatar -->
+                      <div class="avatar avatar-xxl mb-6 mb-md-0">
+                        <span class="avatar-title rounded-circle">
+                          <svg class="svg-inline--fa fa-user" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg><!-- <i class="fa fa-user"></i> Font Awesome fontawesome.com -->
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md">
+
+                      <!-- Header -->
+                      <div class="row mb-6">
+                        <div class="col-12">
+
+                          <!-- Rating -->
+                          <div class="rating fs-sm text-dark" data-value="5">
+                          </div>
+
+                        </div>
+                        <div class="col-12">
+
+                          <!-- Time -->
+                          <span class="fs-xs text-muted">
+                            Logan Edwards, <time datetime="2019-07-25">25 Jul 2019</time>
+                          </span>
+
+                        </div>
+                      </div>
+
+                      <!-- Title -->
+                      <p class="mb-2 fs-lg fw-bold">
+                        So cute!
+                      </p>
+
+                      <!-- Text -->
+                      <p class="text-gray-500">
+                        Justo ut diam erat hendrerit. Morbi porttitor, per eu. Sodales curabitur diam sociis. Taciti lobortis nascetur. Ante laoreet odio hendrerit.
+                        Dictumst curabitur nascetur lectus potenti dis sollicitudin habitant quis vestibulum.
+                      </p>
+
+                      <!-- Footer -->
+                      <div class="row align-items-center">
+                        <div class="col-auto d-none d-lg-block">
+
+                          <!-- Text -->
+                          <p class="mb-0 fs-sm">Was this review helpful?</p>
+
+                        </div>
+                        <div class="col-auto me-auto">
+
+                          <!-- Rate -->
+                          <div class="rate">
+                            <a class="rate-item" data-toggle="vote" data-count="3" href="#" role="button">
+                              <i class="fe fe-thumbs-up"></i>
+                            </a>
+                            <a class="rate-item" data-toggle="vote" data-count="0" href="#" role="button">
+                              <i class="fe fe-thumbs-down"></i>
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+
+                          <!-- Text -->
+                          <p class="mb-0 fs-sm">Comments (0)</p>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <!-- Button -->
+                          <a class="btn btn-xs btn-outline-border" href="#!">
+                            Comment
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review -->
+              <div class="review">
+
+                <!-- Body -->
+                <div class="review-body">
+                  <div class="row">
+                    <div class="col-12 col-md-auto">
+
+                      <!-- Avatar -->
+                      <div class="avatar avatar-xxl mb-6 mb-md-0">
+                        <span class="avatar-title rounded-circle">
+                          <svg class="svg-inline--fa fa-user" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg><!-- <i class="fa fa-user"></i> Font Awesome fontawesome.com -->
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md">
+
+                      <!-- Header -->
+                      <div class="row mb-6">
+                        <div class="col-12">
+
+                          <!-- Rating -->
+                          <div class="rating fs-sm text-dark" data-value="3">
+                          </div>
+
+                        </div>
+                        <div class="col-12">
+
+                          <!-- Time -->
+                          <span class="fs-xs text-muted">
+                            Sophie Casey, <time datetime="2019-07-07">07 Jul 2019</time>
+                          </span>
+
+                        </div>
+                      </div>
+
+                      <!-- Title -->
+                      <p class="mb-2 fs-lg fw-bold">
+                        Cute, but too small
+                      </p>
+
+                      <!-- Text -->
+                      <p class="text-gray-500">
+                        Shall good midst can't. Have fill own his multiply the divided. Thing great. Of heaven whose signs.
+                      </p>
+
+                      <!-- Footer -->
+                      <div class="row align-items-center">
+                        <div class="col-auto d-none d-lg-block">
+
+                          <!-- Text -->
+                          <p class="mb-0 fs-sm">Was this review helpful?</p>
+
+                        </div>
+                        <div class="col-auto me-auto">
+
+                          <!-- Rate -->
+                          <div class="rate">
+                            <a class="rate-item" data-toggle="vote" data-count="2" href="#" role="button">
+                              <i class="fe fe-thumbs-up"></i>
+                            </a>
+                            <a class="rate-item" data-toggle="vote" data-count="1" href="#" role="button">
+                              <i class="fe fe-thumbs-down"></i>
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+
+                          <!-- Text -->
+                          <p class="mb-0 fs-sm">Comments (1)</p>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <!-- Button -->
+                          <a class="btn btn-xs btn-outline-border" href="#!">
+                            Comment
+                          </a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Child review -->
+                <div class="review review-child">
+                  <div class="review-body">
+
+                    <!-- Content -->
+                    <div class="row">
+                      <div class="col-12 col-md-auto">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xxl mb-6 mb-md-0">
+                          <span class="avatar-title rounded-circle">
+                            <svg class="svg-inline--fa fa-user" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg><!-- <i class="fa fa-user"></i> Font Awesome fontawesome.com -->
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="col-12 col-md">
+
+                        <!-- Header -->
+                        <div class="row mb-6">
+                          <div class="col-12">
+
+                            <!-- Rating -->
+                            <div class="rating fs-sm text-dark" data-value="4">
+                            </div>
+
+                          </div>
+                          <div class="col-12">
+
+                            <!-- Time -->
+                            <span class="fs-xs text-muted">
+                              William Stokes, <time datetime="2019-07-14">14 Jul 2019</time>
+                            </span>
+
+                          </div>
+                        </div>
+
+                        <!-- Title -->
+                        <p class="mb-2 fs-lg fw-bold">
+                          Very good
+                        </p>
+
+                        <!-- Text -->
+                        <p class="text-gray-500">
+                          Made face lights yielding forth created for image behold blessed seas.
+                        </p>
+
+                        <!-- Footer -->
+                        <div class="row align-items-center">
+                          <div class="col-auto d-none d-lg-block">
+
+                            <!-- Text -->
+                            <p class="mb-0 fs-sm">Was this review helpful?</p>
+
+                          </div>
+                          <div class="col-auto me-auto">
+
+                            <!-- Rate -->
+                            <div class="rate">
+                              <a class="rate-item" data-toggle="vote" data-count="7" href="#" role="button">
+                                <i class="fe fe-thumbs-up"></i>
+                              </a>
+                              <a class="rate-item" data-toggle="vote" data-count="0" href="#" role="button">
+                                <i class="fe fe-thumbs-down"></i>
+                              </a>
+                            </div>
+
+                          </div>
+                          <div class="col-auto d-none d-lg-block">
+
+                            <!-- Text -->
+                            <p class="mb-0 fs-sm">Comments (0)</p>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <!-- Button -->
+                            <a class="btn btn-xs btn-outline-border" href="#!">
+                              Comment
+                            </a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <nav class="d-flex justify-content-center mt-9">
+              <ul class="pagination pagination-sm text-gray-400">
+                <li class="page-item">
+                  <a class="page-link page-link-arrow" href="#">
+                    <svg class="svg-inline--fa fa-caret-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"></path></svg><!-- <i class="fa fa-caret-left"></i> Font Awesome fontawesome.com -->
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link page-link-arrow" href="#">
+                    <svg class="svg-inline--fa fa-caret-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><!-- <i class="fa fa-caret-right"></i> Font Awesome fontawesome.com -->
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+<!-- end	 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+</body>
+</html>
