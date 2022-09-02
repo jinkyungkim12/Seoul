@@ -55,7 +55,7 @@
 			width: 415px;
 			height: 559px;
 		}
-		#ddd{
+		.ddd{
 			width: 500px;
 			height: 40px;
 			font-family: 'Happiness-Sans-Bold';
@@ -69,11 +69,18 @@
 			height: 70px;
 			background-color: black;
 		}
-		a:link {
-		  color : black;
+		.nav{
+			--bs-nav-link-color: #000000;
+    		--bs-nav-link-hover-color: #FF5600;
 		}
-		a:visited {
-		  color : black;
+		.modbtn{
+		    --bs-btn-bg: #FF5600;
+		    --bs-btn-border-color: #FF5600;
+		    --bs-btn-hover-bg:#FF5600;
+		    --bs-btn-hover-border-color: #FF5600;
+		    --bs-btn-active-bg: #FF5600;
+		    --bs-btn-active-border-color: #FF5600
+		    --bs-btn-active-shadow: inset 0 3px 5px #ffbb98;
 		}
 	</style>
 
@@ -139,14 +146,42 @@
 		<div class="row justify-content-center">
 			<img src="../image/coupon.png" alt="" id="ccc">
 		</div>
+		<!-- Modal btn -->
 		<div class="row justify-content-center">
-			<a type="button" class="btn btn-danger" href="../product/productList.html" id="ddd">지금 바로 쿠폰받고 시작하기</a>
+			<button type="button" class="btn btn-danger ddd" data-bs-toggle="modal" data-bs-target="#exampleModal">지금 바로 쿠폰받고 시작하기</button>
 		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel"><b>CLASS 101</b></h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		      	<div></div>
+		        <span style="margin-top: 3rem;"><b>신규회원 쿠폰팩</b>이 발급되었습니다.<br>발급내용은 마이페이지 <b>"내 쿠폰"</b>에서 확인하실 수 있습니다.</span>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-danger modbtn" href="../product/productList.html">확인</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
 		<div id="eee"></div>
 	</div>
+	
 	
 <!-- end	 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/1d7c148109.js" crossorigin="anonymous"></script>
+	<script>
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+	
+		myModal.addEventListener('shown.bs.modal', () => {
+		  myInput.focus()
+		})
+	</script>
 </body>
 </html>
