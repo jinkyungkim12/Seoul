@@ -94,6 +94,9 @@
 		    background-color: #FF5600;
 		    border-color: #FF5600;
 		}
+		.form-label{
+			font-weight: bold;
+		}
 	</style>
 
 </head>
@@ -156,23 +159,19 @@
 	</div>
 	
 	
-	
-	<!-- 옵션 -->
-	
-	<div class="container">
-		<div class="row">
-			<div>
-				<a type="button" class="btn btn-dark" href="RegForm.html" style="color: #FF5600;"><b>수강생</b></a>
-				<a type="button" class="btn btn-dark" href="RegFormCreator.html" style="color: white;"><b>크리에이터</b></a>
-			</div>
-		</div>
-	</div>
-	
-	
 	<!-- 회원가입 항목 -->
 	
 	<div class="container">
 		<div class="row gy-3" id="firstrow">
+			<div class="col-6">
+				<label class="form-label">구분</label>
+	   			<select class="form-select" aria-label="Default select example">
+				  <option selected>구분</option>
+				  <option value="1">수강생</option>
+				  <option value="2">크리에이터</option>
+			  	</select>
+			</div>
+			<div class="col-6"></div>
 			<div class="col-6">
 				<label class="form-label">이름</label>
 	   			<input type="text" class="form-control" value="" placeholder="이름">
@@ -189,6 +188,14 @@
 			<div class="col-6">
 				<label class="form-label">비밀번호 확인</label>
 	   			<input type="password" class="form-control" value="" placeholder="비밀번호 확인">
+			</div>
+			<div class="col-6">
+				<label class="form-label">소속회사</label>
+	   			<input type="text" class="form-control" value="" placeholder="소속회사">
+			</div>
+			<div class="col-6">
+				<label class="form-label">크리에이터 활동명</label>
+	   			<input type="text" class="form-control" value="" placeholder="크리에이터 활동명">
 			</div>
 			<div class="col-6">
 				<label class="form-label">생년월일</label>
@@ -213,35 +220,27 @@
 			</div>
 			<div class="col-6">
 				<label class="form-label">연락처(필수)</label>
-					<div class="input-group">
-					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
-						  <option value="1">SKT</option>
-						  <option value="2">LGT</option>
-						  <option value="3">KT</option>
-					  </select>
-					  <input type="mobile" class="form-control">
-					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
-					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
-					</div>
+				<div class="input-group">
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>통신사</option>
+					  <option value="1">SKT</option>
+					  <option value="2">LGT</option>
+					  <option value="3">KT</option>
+				  </select>
+				  <input type="mobile" class="form-control" style="width: 50%" placeholder="010-0000-0000">
+				</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">연락처(선택)</label>
-					<div class="input-group">
-					  <select class="form-select col-2" aria-label="Default select example">
-						  <option selected>통신사</option>
-						  <option value="1">SKT</option>
-						  <option value="2">LGT</option>
-						  <option value="3">KT</option>
-					  </select>
-					  <input type="mobile" class="form-control">
-					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
-					  <span class="input-group-text">-</span>
-					  <input type="mobile" class="form-control">
-					</div>
+				<div class="input-group">
+				  <select class="form-select col-2" aria-label="Default select example">
+					  <option selected>통신사</option>
+					  <option value="1">SKT</option>
+					  <option value="2">LGT</option>
+					  <option value="3">KT</option>
+				  </select>
+				  <input type="mobile" class="form-control" style="width: 50%" placeholder="010-0000-0000">
+				</div>
 			</div>
 			<div class="col-6">
 				<label class="form-label">이메일</label>
